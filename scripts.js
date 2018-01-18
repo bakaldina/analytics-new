@@ -2065,7 +2065,7 @@ AmCharts.makeChart("chartdiv7", {
       columnWidth: 0.85,
       fillAlphas: 1,
       id: "AmGraph-12",
-      title: "Золото-скрановые",
+      title: "Золото-скарновые",
       type: "column",
       labelText: "[[value]]",
       valueField: "column-12"
@@ -2213,11 +2213,21 @@ $(document).ready(function () {
   });
 
   $("#userInfo").on("click", function () {
-    Запа;
     $(this)
       .closest("li")
       .toggleClass("active");
   });
+  $('.menu__item_text').on('click', function () {
+    $(this).toggleClass('grey');
+  });
+
+  $('.nav_text').on('click', function () {
+    $(this).toggleClass('grey');
+  });
+
+  // $('body').on('click', '.nav_text', function () {
+  //   $(this).toggleClass('grey');
+  // });
 
   $("#menu_icon").on("click", function () {
     $(this)
