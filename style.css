@@ -383,6 +383,7 @@ h4 {
   background-color: rgba(0, 0, 0, 0.5);
 }
 .grey {
+  filter: grayscale(1);
   color: #c2d0e1;
   text-decoration: underline;
 }
