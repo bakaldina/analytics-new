@@ -14,9 +14,11 @@
     <script src="https://www.amcharts.com/lib/3/plugins/export/export.min.js"></script>
     <script src="https://www.amcharts.com/lib/3/ammap.js"></script>
     <script src="https://www.amcharts.com/lib/3/maps/js/russiaLow.js"></script>
+    <script type="text/javascript" src="https://www.amcharts.com/lib/3/pie.js"></script>
     <link rel="stylesheet" href="https://www.amcharts.com/lib/3/plugins/export/export.css" type="text/css" media="all" />
     <script src="https://www.amcharts.com/lib/3/themes/light.js"></script>
     <script type="text/javascript" src="../../scripts.js"></script>
+    <script type="text/javascript" src="../../js/charts-field.js"></script>
 </head>
 
 <body>
@@ -165,11 +167,65 @@
                 </li>
             </ul>
         </nav>
-        <section class="content" style="margin: 30px; font-size: 30px;">
-            В разработке Месторождения
+        <section class="content">
+            <div class="row">
+                <h2>Популярная статистика, всего по России</h2>
+                <div class="row__container1">
+                    <div class="row__container1_item1">
+                        <h3>Общее количество месторождений</h3>
+                        <p class="main-value">17336</p>
+                        <p class="bottom-value"></p>
+                    </div>
+                    <div class="row__container1_item1 grey">
+                        <h3 style="margin-top: 100px;">Информация дополняется</h3>
+                        <!-- <p class="main-value">13817,4</p>
+                        <p class="bottom-value">тонн</p>
+                        <p class="bottom-value">A+B+C
+                            <sub>1</sub>+C
+                            <sub>2</sub>
+                        </p> -->
+                    </div>
+                    <div class="row__container1_item1 grey">
+                        <h3 style="margin-top: 100px;">Информация дополняется</h3>
+                        <!-- <p class="main-value">286,6</p>
+                        <p class="bottom-value">тонн</p> -->
+                    </div>
+                    <div class="row__container1_item1 grey">
+                        <h3 style="margin-top: 100px;">Информация дополняется</h3>
+                        <!-- <iframe style="width:265px;border:0;overflow:hidden;background-color:transparent;height:169px" scrolling="no" src="https://fortrader.org/informers/getInformer?st=25&cat=19&mult=0.99&showGetBtn=0&w=265&hideDiff=1&colors=false&items=1"></iframe> -->
+                    </div>
+                </div>
+
+                <h2>Какое-то название</h2>
+
+                <div class="row__container2">
+                    <div class="row__container2_item2">
+                        <h3>Распределение по группам видов полезных ископаемых</h3>
+                        <img src="../../image/au_chart-1.png" onclick="modalOpen8()" alt="Распределение по группам видов полезных ископаемых">
+                    </div>
+                    <div class="row__container2_item2">
+                        <h3>Динамика добычи и прироста запасов в 1991-2015 гг., тонн</h3>
+                        <img src="../../image/au_chart-2.png" onclick="modalOpen1()" alt="Динамика добычи золота и прироста его запасов категорий А+В+С">
+                    </div>
+                    <div class="row__container2_item2">
+                        <h3>Динамика распределения запасов и ресурсов в 2004-2015 гг., тонн</h3>
+                        <img src="../../image/au_chart-3.png" onclick="modalOpen3()" alt="Динамика распределения запасов и ресурсов">
+                    </div>
+                    <div class="row__container2_item2">
+                        <h3>Динамика движения запасов в 1993–2015 гг., тонн</h3>
+                        <img src="../../image/au_chart-4.png" onclick="modalOpen2()" alt="Динамика движения запасов золота в 2006–2015 гг">
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
-
+    <div class="modals8">
+        <div class="modals8__overlay" onclick="modalClose8()">
+        </div>
+        <div class="modals8__content">
+            <div id="chartdiv8" style="width: 100%; height: 700px; background-color: #FFFFFF;"></div>
+        </div>
+    </div>
     <footer class="footer">
         <div class="footer__item">
             <div class="footer__item_column">

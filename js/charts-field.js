@@ -2191,6 +2191,61 @@ AmCharts.makeChart("chartdiv7", {
     ]
 });
 
+AmCharts.makeChart("chartdiv8",
+    {
+        "type": "pie",
+        "balloonText": "[[title]]<br><span style='font-size:14px'><b>[[value]] т.</b> ([[percents]]%)</span>",
+        "depth3D": 1,
+        "startEffect": "easeInSine",
+        "startDuration": 2,
+        "tabIndex": 0,
+        "titleField": "category",
+        "valueField": "column-1",
+        "accessibleTitle": "",
+        "fontSize": 14,
+        "processTimeout": -1,
+        "theme": "light",
+        "thousandsSeparator": " ",
+        "allLabels": [],
+        "balloon": {},
+        "legend": {
+            "enabled": true,
+            "align": "center",
+            "combineLegend": true,
+            "equalWidths": false,
+            "fontSize": 13,
+            "markerType": "diamond",
+            "reversedOrder": true,
+            "textClickEnabled": true,
+            "valueText": ""
+        },
+        "titles": [
+            {
+                "id": "Title-1",
+                "size": 18,
+                "text": "Распределение по группам видов полезных ископаемых"
+            }
+        ],
+        "dataProvider": [
+            {
+                "category": "Металлические",
+                "column-1": "6990"
+            },
+            {
+                "category": "Неметаллические",
+                "column-1": "4815"
+            },
+            {
+                "category": "Твердые горючие",
+                "column-1": "2061"
+            },
+            {
+                "category": "Углеводородное сырье",
+                "column-1": "3666"
+            }
+        ]
+    }
+);
 function modalOpen() {
     $(".modals").show();
 }
@@ -2245,10 +2300,17 @@ function modalOpen6() {
 function modalClose6() {
     $(".modals6").hide();
 }
+
 function modalOpen7() {
     $(".modals7").show();
 }
-
 function modalClose7() {
     $(".modals7").hide();
+}
+
+function modalOpen8() {
+    $(".modals8").show();
+}
+function modalClose8() {
+    $(".modals8").hide();
 }
