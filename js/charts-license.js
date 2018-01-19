@@ -228,15 +228,15 @@ AmCharts.makeChart("chartdiv14", {
         },
         {
             "category": "2013",
-            "column-1": "",
-            "column-2": "",
-            "column-3": "",
-            "column-4": "",
-            "column-5": "",
-            "column-6": "",
-            "column-7": "",
-            "column-8": "",
-            "column-9": ""
+            "column-1": "29",
+            "column-2": "415",
+            "column-3": "479",
+            "column-4": "463",
+            "column-5": "85",
+            "column-6": "0",
+            "column-7": "56",
+            "column-8": "1063",
+            "column-9": "2590"
         },
         {
             "category": "2014",
