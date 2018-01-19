@@ -350,16 +350,16 @@ h4 {
 .modals8,
 .modals9,
 .modals10,
-.modals11 {
+.modals11,
+.modals12,
+.modals13,
+.modals14 {
   display: none;
   position: fixed;
   width: 1200px;
   left: 50%;
   top: 50%;
   z-index: 2;
-}
-.modals9 {
-  width: 1400px;
 }
 .modals__content,
 .modals1__content,
@@ -372,7 +372,10 @@ h4 {
 .modals8__content,
 .modals9__content,
 .modals10__content,
-.modals11__content {
+.modals11__content,
+.modals12__content,
+.modals13__content,
+.modals14__content {
   transform: translate(-50%, -50%);
   z-index: 2;
   position: relative;
@@ -388,7 +391,10 @@ h4 {
 .modals8__overlay,
 .modals9__overlay,
 .modals10__overlay,
-.modals11__overlay {
+.modals11__overlay,
+.modals12__overlay,
+.modals13__overlay,
+.modals14__overlay {
   z-index: 1;
   width: 100%;
   height: 100%;

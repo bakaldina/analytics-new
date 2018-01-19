@@ -2193,7 +2193,7 @@ AmCharts.makeChart("chartdiv7", {
 
 AmCharts.makeChart("chartdiv8", {
     "type": "pie",
-    "balloonText": "[[title]]<br><span style='font-size:14px'><b>[[value]] т.</b> ([[percents]]%)</span>",
+    "balloonText": "[[title]]<br><span style='font-size:14px'><b>[[value]]</b> ([[percents]]%)</span>",
     "depth3D": 1,
     "startEffect": "easeInSine",
     "tabIndex": 0,
@@ -2248,7 +2248,7 @@ AmCharts.makeChart("chartdiv8", {
 
 AmCharts.makeChart("chartdiv9", {
     "type": "pie",
-    "balloonText": "[[title]]<br><span style='font-size:14px'><b>[[value]] т.</b> ([[percents]]%)</span>",
+    "balloonText": "[[title]]<br><span style='font-size:14px'><b>[[value]]</b> ([[percents]]%)</span>",
     "depth3D": 1,
     "colors": [
         "#FF0F00",
@@ -2325,7 +2325,7 @@ AmCharts.makeChart("chartdiv9", {
 
 AmCharts.makeChart("chartdiv10", {
     "type": "pie",
-    "balloonText": "[[title]]<br><span style='font-size:14px'><b>[[value]] т.</b> ([[percents]]%)</span>",
+    "balloonText": "[[title]]<br><span style='font-size:14px'><b>[[value]]</b> ([[percents]]%)</span>",
     "depth3D": 1,
     "colors": [
         "#FF0F00",
@@ -2355,7 +2355,7 @@ AmCharts.makeChart("chartdiv10", {
     "titleField": "category",
     "valueField": "column-1",
     "accessibleTitle": "",
-    "fontSize": 14,
+    "fontSize": 11,
     "processTimeout": -1,
     "theme": "light",
     "thousandsSeparator": " ",
@@ -2418,7 +2418,7 @@ AmCharts.makeChart("chartdiv10", {
 
 AmCharts.makeChart("chartdiv11", {
     "type": "pie",
-    "balloonText": "[[title]]<br><span style='font-size:14px'><b>[[value]] т.</b> ([[percents]]%)</span>",
+    "balloonText": "[[title]]<br><span style='font-size:14px'><b>[[value]]</b> ([[percents]]%)</span>",
     "depth3D": 1,
     "colors": [
         "#FF0F00",
@@ -2559,7 +2559,7 @@ AmCharts.makeChart("chartdiv12", {
     "trendLines": [],
     "graphs": [
         {
-            "balloonText": "[[title]] в [[category]]: <span style=\"font-size: 18px\"><b>[[value]]</b></span>",
+            "balloonText": "[[title]] в [[category]]: <span style=\"font-size: 18px\"><br><b>[[value]]</b></span>",
             "bullet": "round",
             "bulletSize": 10,
             "columnWidth": 0,
@@ -2570,7 +2570,7 @@ AmCharts.makeChart("chartdiv12", {
             "valueField": "column-1"
         },
         {
-            "balloonText": "[[title]] в [[category]]: <span style=\"font-size: 18px\"><b>[[value]]</b></span>",
+            "balloonText": "[[title]] в [[category]]: <span style=\"font-size: 18px\"><br><b>[[value]]</b></span>",
             "bullet": "round",
             "bulletSize": 10,
             "id": "AmGraph-2",
@@ -2579,7 +2579,7 @@ AmCharts.makeChart("chartdiv12", {
             "valueField": "column-2"
         },
         {
-            "balloonText": "[[title]] в [[category]]: <span style=\"font-size: 18px\"><b>[[value]]</b></span>",
+            "balloonText": "[[title]] в [[category]]: <span style=\"font-size: 18px\"><br><b>[[value]]</b></span>",
             "bullet": "round",
             "bulletHitAreaSize": 0,
             "bulletSize": 10,
@@ -2798,7 +2798,7 @@ AmCharts.makeChart("chartdiv13", {
     "trendLines": [],
     "graphs": [
         {
-            "balloonText": "[[title]] в [[category]]: <span style=\"font-size: 18px\"><b>[[value]]</b></span>",
+            "balloonText": "[[title]] в [[category]]: <span style=\"font-size: 18px\"><br><b>[[value]]</b></span>",
             "bullet": "round",
             "bulletSize": 10,
             "columnWidth": 0,
@@ -2809,7 +2809,7 @@ AmCharts.makeChart("chartdiv13", {
             "valueField": "column-1"
         },
         {
-            "balloonText": "[[title]] в [[category]]: <span style=\"font-size: 18px\"><b>[[value]]</b></span>",
+            "balloonText": "[[title]] в [[category]]: <span style=\"font-size: 18px\"><br><b>[[value]]</b></span>",
             "bullet": "round",
             "bulletSize": 10,
             "id": "AmGraph-2",
@@ -2818,7 +2818,7 @@ AmCharts.makeChart("chartdiv13", {
             "valueField": "column-2"
         },
         {
-            "balloonText": "[[title]] в [[category]]: <span style=\"font-size: 18px\"><b>[[value]]</b></span>",
+            "balloonText": "[[title]] в [[category]]: <span style=\"font-size: 18px\"><br><b>[[value]]</b></span>",
             "bullet": "round",
             "bulletHitAreaSize": 0,
             "bulletSize": 10,
@@ -3001,15 +3001,52 @@ function modalOpen9() {
 function modalClose9() {
     $(".modals9").hide();
 }
+
 function modalOpen10() {
     $(".modals10").show();
 }
 function modalClose10() {
     $(".modals10").hide();
 }
+
 function modalOpen11() {
     $(".modals11").show();
 }
 function modalClose11() {
     $(".modals11").hide();
+}
+
+function modalOpen12() {
+    $(".modals12").show();
+}
+function modalClose12() {
+    $(".modals12").hide();
+}
+
+function modalOpen13() {
+    $(".modals13").show();
+}
+
+function modalClose13() {
+    $(".modals13").hide();
+}
+function modalOpen14() {
+    $(".modals14").show();
+}
+function modalClose14() {
+    $(".modals14").hide();
+}
+
+function modalOpen15() {
+    $(".modals15").show();
+}
+function modalClose15() {
+    $(".modals15").hide();
+}
+
+function modalOpen16() {
+    $(".modals16").show();
+}
+function modalClose16() {
+    $(".modals16").hide();
 }
