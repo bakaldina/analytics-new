@@ -419,6 +419,7 @@ h4 {
 }
 .footer {
   height: 270px;
+  z-index: 2;
   background-color: #263948;
 }
 .footer__item {
