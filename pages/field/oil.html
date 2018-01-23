@@ -16,7 +16,8 @@
     <script src="https://www.amcharts.com/lib/3/maps/js/russiaLow.js"></script>
     <link rel="stylesheet" href="https://www.amcharts.com/lib/3/plugins/export/export.css" type="text/css" media="all" />
     <script src="https://www.amcharts.com/lib/3/themes/light.js"></script>
-    <script type="text/javascript" src="../../scripts.js"></script>
+    <script type="text/javascript" src="../../js/charts-field.js"></script>
+    <script type="text/javascript" src="../../../scripts.js"></script>
 </head>
 
 <body>
@@ -165,11 +166,67 @@
                 </li>
             </ul>
         </nav>
-        <section class="content" style="margin: 30px; font-size: 30px;">
-            В разработке Месторождения
+        <section class="content">
+            <div class="row">
+                <h2>Популярная статистика по нефти, всего по России</h2>
+                <div class="row__container1">
+                    <div class="row__container1_item1">
+                        <h3>Количество месторождений</h3>
+                        <p class="main-value">3074</p>
+                        <p class="bottom-value"></p>
+                    </div>
+                    <div class="row__container1_item1">
+                        <h3>Запасы</h3>
+                        <p class="main-value">29676,031</p>
+                        <p class="bottom-value">млн. тонн</p>
+                        <p class="bottom-value">A+B+C
+                            <sub>1</sub>+ B
+                            <sub>2</sub> + C
+                            <sub>2</sub>
+                        </p>
+                    </div>
+                    <div class="row__container1_item1">
+                        <h3>Добыча за 2016г.</h3>
+                        <p class="main-value">512,989</p>
+                        <p class="bottom-value">млн. тонн</p>
+                    </div>
+                    <div class="row__container1_item1">
+                        <h3>Цена (курс ЦБ РФ)</h3>
+                        <iframe style="width:260px;border:0;overflow:hidden;background-color:transparent;height:189px" scrolling="no" src="https://fortrader.org/informers/getInformer?st=25&cat=13&title=undefined&mult=1&showGetBtn=0&w=260&hideDiff=1&colors=false&items=47%2C25460&columns="></iframe>
+                    </div>
+                </div>
+
+                <h2>Статистика по запасам</h2>
+
+                <div class="row__container2">
+                    <div class="row__container2_item2">
+                        <h3>Динамика движения запасов в 1993–2015 гг., тонн</h3>
+                        <img src="../../image/au_chart-17.png" onclick="modalOpen16()" alt="Динамика движения запасов нефти">
+                    </div>
+                    <div class="row__container2_item2 grey-block">
+                        <h3>Динамика добычи и прироста запасов в 1991-2015 гг., тонн</h3>
+                        <img src="../../image/au_chart-2.png" onclick="modalOpen1()" alt="Динамика добычи золота и прироста его запасов категорий А+В+С">
+                    </div>
+                    <div class="row__container2_item2 grey-block">
+                        <h3>Динамика распределения запасов и ресурсов в 2004-2015 гг., тонн</h3>
+                        <img src="../../image/au_chart-3.png" onclick="modalOpen3()" alt="Динамика распределения запасов и ресурсов">
+                    </div>
+                    <div class="row__container2_item2 grey-block">
+                        <h3>Динамика движения запасов в 1993–2015 гг., тонн</h3>
+                        <img src="../../image/au_chart-4.png" onclick="modalOpen2()" alt="Динамика движения запасов золота в 2006–2015 гг">
+                    </div>
+                </div>
+
+            </div>
         </section>
     </main>
-
+    <div class="modals16">
+        <div class="modals16__overlay" onclick="modalClose16()">
+        </div>
+        <div class="modals16__content">
+            <div id="chartdivF16" style="width: 100%; height: 700px; background-color: #FFFFFF;"></div>
+        </div>
+    </div>
     <footer class="footer">
         <div class="footer__item">
             <div class="footer__item_column">

@@ -2234,7 +2234,7 @@ AmCharts.makeChart("chartdivF14", {
     valueAxes: [
         {
             id: "ValueAxis-1",
-            title: "тонн"
+            title: "тыс. тонн"
         }
     ],
     allLabels: [],
@@ -2253,98 +2253,414 @@ AmCharts.makeChart("chartdivF14", {
     dataProvider: [
         {
             category: "1993",
-            c2: "2411",
-            abc1: "6623"
+            c2: "34.1",
+            abc1: "75.0"
         },
         {
             category: "1995",
-            c2: "2398",
-            abc1: "6602"
+            c2: "35.5",
+            abc1: "76.5"
         },
         {
             category: "1997",
-            c2: "2433",
-            abc1: "6470"
+            c2: "35.5",
+            abc1: "75.8"
         },
         {
             category: "1999",
-            c2: "2441",
-            abc1: "6263"
+            c2: "35.8",
+            abc1: "75.3"
         },
         {
             category: "2001",
-            c2: "2492",
-            abc1: "6058"
+            c2: "40.3",
+            abc1: "73.9"
         },
         {
             category: "2002",
-            c2: "2409",
-            abc1: "5934"
+            c2: "40.1",
+            abc1: "73.6"
         },
         {
             category: "2003",
-            c2: "2417",
-            abc1: "5812"
+            c2: "40.0",
+            abc1: "72.8"
         },
         {
             category: "2004",
-            c2: "2435",
-            abc1: "5716"
+            c2: "40.1",
+            abc1: "71.8"
         },
         {
             category: "2005",
-            c2: "2741",
-            abc1: "5677"
+            c2: "41.7",
+            abc1: "70.6"
         },
         {
             category: "2006",
-            c2: "2871",
-            abc1: "6918"
+            c2: "41.1",
+            abc1: "70.1"
         },
         {
             category: "2007",
-            c2: "3388",
-            abc1: "7529"
+            c2: "43.2",
+            abc1: "68.8"
         },
         {
             category: "2008",
-            c2: "3339",
-            abc1: "7861"
+            c2: "49.9",
+            abc1: "69.3"
         },
         {
             category: "2009",
-            c2: "3974",
-            abc1: "7958"
+            c2: "51.2",
+            abc1: "68.1"
         },
         {
             category: "2010",
-            c2: "4217",
-            abc1: "7982"
+            c2: "44.5",
+            abc1: "67.3"
         },
         {
             category: "2011",
-            c2: "4407",
-            abc1: "8098"
+            c2: "46.3",
+            abc1: "68.1"
         },
         {
             category: "2012",
-            c2: "4698",
-            abc1: "8047"
+            c2: "49",
+            abc1: "66.7"
         },
         {
             category: "2013",
-            c2: "4860",
-            abc1: "8053"
+            c2: "50.4",
+            abc1: "70.2"
         },
         {
             category: "2014",
-            c2: "5128",
-            abc1: "8006"
+            c2: "52.9",
+            abc1: "68.8"
         },
         {
             category: "2015",
-            c2: "5658",
-            abc1: "8160"
+            c2: "53.8",
+            abc1: "65"
+        }
+    ]
+});
+
+AmCharts.makeChart("chartdivF15", {
+    type: "serial",
+    categoryField: "category",
+    columnSpacing: 0,
+    thousandsSeparator: " ",
+    startDuration: 1,
+    fontSize: 16,
+    colors: ["#67b7dc", "#fdd400"],
+    theme: "light",
+    categoryAxis: {
+        gridPosition: "start"
+    },
+    trendLines: [],
+    graphs: [
+        {
+            balloonText:
+                "<b>[[title]]</b> в тоннах <br>[[category]]: <b>[[value]]</b>",
+            fillAlphas: 1,
+            id: "AmGraph-1",
+            title: "Запасы категорий A+B+C1",
+            type: "column",
+            fontSize: 10,
+            tabIndex: 5,
+            labelText: "[[value]]",
+            valueField: "abc1"
+        },
+        {
+            balloonText:
+                "<b>[[title]]</b> в тоннах <br>[[category]]: <b>[[value]]</b>",
+            fillAlphas: 1,
+            id: "AmGraph-2",
+            title: "Запасы категорий C2",
+            fontSize: 10,
+            tabIndex: 5,
+            labelText: "[[value]]",
+            type: "column",
+            valueField: "c2"
+        }
+    ],
+    guides: [],
+    valueAxes: [
+        {
+            id: "ValueAxis-1",
+            title: "млн. тонн"
+        }
+    ],
+    allLabels: [],
+    balloon: {},
+    legend: {
+        enabled: true,
+        useGraphSettings: true
+    },
+    titles: [
+        {
+            id: "Title-1",
+            size: 24,
+            text: "Динамика движения запасов в 1993–2015 гг., тонн"
+        }
+    ],
+    dataProvider: [
+        {
+            category: "1993",
+            c2: "19.7",
+            abc1: "68.6"
+        },
+        {
+            category: "1995",
+            c2: "19.7",
+            abc1: "67.9"
+        },
+        {
+            category: "1997",
+            c2: "19.5",
+            abc1: "66.9"
+        },
+        {
+            category: "1999",
+            c2: "19.4",
+            abc1: "65.8"
+        },
+        {
+            category: "2001",
+            c2: "19.3",
+            abc1: "64.6"
+        },
+        {
+            category: "2002",
+            c2: "19.5",
+            abc1: "64.0"
+        },
+        {
+            category: "2003",
+            c2: "19.6",
+            abc1: "63.5"
+        },
+        {
+            category: "2004",
+            c2: "19.6",
+            abc1: "63.1"
+        },
+        {
+            category: "2005",
+            c2: "21.8",
+            abc1: "63.3"
+        },
+        {
+            category: "2006",
+            c2: "22.1",
+            abc1: "64.5"
+        },
+        {
+            category: "2007",
+            c2: "22.1",
+            abc1: "63.8"
+        },
+        {
+            category: "2008",
+            c2: "22.15",
+            abc1: "63.7"
+        },
+        {
+            category: "2009",
+            c2: "24.56",
+            abc1: "64.5"
+        },
+        {
+            category: "2010",
+            c2: "24.23",
+            abc1: "65.4"
+        },
+        {
+            category: "2011",
+            c2: "25.3",
+            abc1: "67.4"
+        },
+        {
+            category: "2012",
+            c2: "24.2",
+            abc1: "67.2"
+        },
+        {
+            category: "2013",
+            c2: "24.2",
+            abc1: "66.6"
+        },
+        {
+            category: "2014",
+            c2: "23.35",
+            abc1: "68.5"
+        },
+        {
+            category: "2015",
+            c2: "28.2",
+            abc1: "69.6"
+        }
+    ]
+});
+
+AmCharts.makeChart("chartdivF16", {
+    type: "serial",
+    categoryField: "category",
+    columnSpacing: 0,
+    thousandsSeparator: " ",
+    startDuration: 1,
+    fontSize: 16,
+    colors: ["#67b7dc", "#fdd400"],
+    theme: "light",
+    categoryAxis: {
+        gridPosition: "start"
+    },
+    trendLines: [],
+    graphs: [
+        {
+            balloonText:
+                "<b>[[title]]</b> в тоннах <br>[[category]]: <b>[[value]]</b>",
+            fillAlphas: 1,
+            id: "AmGraph-1",
+            title: "Запасы категорий A+B+C1",
+            type: "column",
+            fontSize: 10,
+            tabIndex: 5,
+            labelText: "[[value]]",
+            valueField: "abc1"
+        },
+        {
+            balloonText:
+                "<b>[[title]]</b> в тоннах <br>[[category]]: <b>[[value]]</b>",
+            fillAlphas: 1,
+            id: "AmGraph-2",
+            title: "Запасы категорий C2",
+            fontSize: 10,
+            tabIndex: 5,
+            labelText: "[[value]]",
+            type: "column",
+            valueField: "c2"
+        }
+    ],
+    guides: [],
+    valueAxes: [
+        {
+            id: "ValueAxis-1",
+            title: "млрд. тонн"
+        }
+    ],
+    allLabels: [],
+    balloon: {},
+    legend: {
+        enabled: true,
+        useGraphSettings: true
+    },
+    titles: [
+        {
+            id: "Title-1",
+            size: 24,
+            text: "Динамика движения запасов в 2005–2015 гг., тонн"
+        }
+    ],
+    dataProvider: [
+        // {
+        //     category: "1993",
+        //     c2: "19.7",
+        //     abc1: "68.6"
+        // },
+        // {
+        //     category: "1995",
+        //     c2: "19.7",
+        //     abc1: "67.9"
+        // },
+        // {
+        //     category: "1997",
+        //     c2: "19.5",
+        //     abc1: "66.9"
+        // },
+        // {
+        //     category: "1999",
+        //     c2: "19.4",
+        //     abc1: "65.8"
+        // },
+        // {
+        //     category: "2001",
+        //     c2: "19.3",
+        //     abc1: "64.6"
+        // },
+        // {
+        //     category: "2002",
+        //     c2: "19.5",
+        //     abc1: "64.0"
+        // },
+        // {
+        //     category: "2003",
+        //     c2: "19.6",
+        //     abc1: "63.5"
+        // },
+        // {
+        //     category: "2004",
+        //     c2: "19.6",
+        //     abc1: "63.1"
+        // },
+        {
+            category: "2005",
+            c2: "8.5",
+            abc1: "17.0"
+        },
+        {
+            category: "2006",
+            c2: "8.9",
+            abc1: "17.0"
+        },
+        {
+            category: "2007",
+            c2: "9.2",
+            abc1: "17.1"
+        },
+        {
+            category: "2008",
+            c2: "9.5",
+            abc1: "17.2"
+        },
+        {
+            category: "2009",
+            c2: "10.2",
+            abc1: "17.4"
+        },
+        {
+            category: "2010",
+            c2: "10.6",
+            abc1: "17.6"
+        },
+        {
+            category: "2011",
+            c2: "10.9",
+            abc1: "17.8"
+        },
+        {
+            category: "2012",
+            c2: "10.8",
+            abc1: "18.0"
+        },
+        {
+            category: "2013",
+            c2: "11.0",
+            abc1: "18.2"
+        },
+        {
+            category: "2014",
+            c2: "11.1",
+            abc1: "18.4"
+        },
+        {
+            category: "2015",
+            c2: "11.2",
+            abc1: "18.4"
         }
     ]
 });
@@ -3198,16 +3514,16 @@ function modalClose14() {
 }
 
 
-// function modalOpen15() {
-//     $(".modals15").show();
-// }
-// function modalClose15() {
-//     $(".modals15").hide();
-// }
+function modalOpen15() {
+    $(".modals15").show();
+}
+function modalClose15() {
+    $(".modals15").hide();
+}
 
-// function modalOpen16() {
-//     $(".modals16").show();
-// }
-// function modalClose16() {
-//     $(".modals16").hide();
-// }
+function modalOpen16() {
+    $(".modals16").show();
+}
+function modalClose16() {
+    $(".modals16").hide();
+}
