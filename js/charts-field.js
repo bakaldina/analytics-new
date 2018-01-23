@@ -1,4 +1,4 @@
-AmCharts.makeChart("chartdiv1", {
+AmCharts.makeChart("chartdivF1", {
     type: "serial",
     categoryField: "category",
     columnWidth: 0.84,
@@ -162,13 +162,13 @@ AmCharts.makeChart("chartdiv1", {
     ]
 });
 
-AmCharts.makeChart("chartdiv2", {
+AmCharts.makeChart("chartdivF2", {
     type: "serial",
     categoryField: "category",
     theme: "light",
     thousandsSeparator: " ",
     startDuration: 1,
-    fontSize: 16,
+    fontSize: 12,
     colors: ["#67b7dc", "#fdd400"],
     categoryAxis: {
         gridPosition: "start"
@@ -368,7 +368,7 @@ AmCharts.makeChart("chartdiv2", {
     }
 });
 
-AmCharts.makeChart("chartdiv3", {
+AmCharts.makeChart("chartdivF3", {
     type: "serial",
     categoryField: "category",
     columnSpacing3D: 1,
@@ -573,7 +573,7 @@ AmCharts.makeChart("chartdiv3", {
     ]
 });
 
-AmCharts.makeChart("chartdiv4", {
+AmCharts.makeChart("chartdivF4", {
     type: "serial",
     categoryField: "category",
     columnSpacing: 0,
@@ -1589,7 +1589,7 @@ AmCharts.makeChart("map", {
     }
 });
 
-AmCharts.makeChart("chartdiv5", {
+AmCharts.makeChart("chartdivF5", {
     type: "serial",
     categoryField: "category",
     theme: "light",
@@ -1749,7 +1749,7 @@ AmCharts.makeChart("chartdiv5", {
     }
 });
 
-AmCharts.makeChart("chartdiv6", {
+AmCharts.makeChart("chartdivF6", {
     type: "serial",
     categoryField: "category",
     columnSpacing3D: 1,
@@ -1911,7 +1911,7 @@ AmCharts.makeChart("chartdiv6", {
     ]
 });
 
-AmCharts.makeChart("chartdiv7", {
+AmCharts.makeChart("chartdivF7", {
     type: "serial",
     categoryField: "category",
     columnSpacing3D: 1,
@@ -2191,66 +2191,224 @@ AmCharts.makeChart("chartdiv7", {
     ]
 });
 
-AmCharts.makeChart("chartdiv8", {
-    "type": "pie",
-    "balloonText": "[[title]]<br><span style='font-size:14px'><b>[[value]]</b> ([[percents]]%)</span>",
-    "depth3D": 1,
-    "startEffect": "easeInSine",
-    "tabIndex": 0,
-    "titleField": "category",
-    "valueField": "column-1",
-    "accessibleTitle": "",
-    "fontSize": 14,
-    "processTimeout": -1,
-    "theme": "light",
-    "thousandsSeparator": " ",
-    "allLabels": [],
-    "balloon": {},
-    "legend": {
-        "enabled": true,
-        "align": "center",
-        "combineLegend": true,
-        "equalWidths": false,
-        "fontSize": 15,
-        "markerType": "diamond",
-        "spacing": 64,
-        "markerLabelGap": 13,
-        "reversedOrder": true,
-        "textClickEnabled": true,
-        "valueText": ""
+AmCharts.makeChart("chartdivF14", {
+    type: "serial",
+    categoryField: "category",
+    columnSpacing: 0,
+    thousandsSeparator: " ",
+    startDuration: 1,
+    fontSize: 16,
+    colors: ["#67b7dc", "#fdd400"],
+    theme: "light",
+    categoryAxis: {
+        gridPosition: "start"
     },
-    "titles": [
+    trendLines: [],
+    graphs: [
         {
-            "id": "Title-1",
-            "size": 20,
-            "text": "Распределение по группам видов полезных ископаемых (количество)"
+            balloonText:
+                "<b>[[title]]</b> в тоннах <br>[[category]]: <b>[[value]]</b>",
+            fillAlphas: 1,
+            id: "AmGraph-1",
+            title: "Запасы категорий A+B+C1",
+            type: "column",
+            fontSize: 10,
+            tabIndex: 5,
+            labelText: "[[value]]",
+            valueField: "abc1"
+        },
+        {
+            balloonText:
+                "<b>[[title]]</b> в тоннах <br>[[category]]: <b>[[value]]</b>",
+            fillAlphas: 1,
+            id: "AmGraph-2",
+            title: "Запасы категорий C2",
+            fontSize: 10,
+            tabIndex: 5,
+            labelText: "[[value]]",
+            type: "column",
+            valueField: "c2"
         }
     ],
-    "dataProvider": [
+    guides: [],
+    valueAxes: [
         {
-            "category": "Металлические",
+            id: "ValueAxis-1",
+            title: "тонн"
+        }
+    ],
+    allLabels: [],
+    balloon: {},
+    legend: {
+        enabled: true,
+        useGraphSettings: true
+    },
+    titles: [
+        {
+            id: "Title-1",
+            size: 24,
+            text: "Динамика движения запасов в 1993–2015 гг., тонн"
+        }
+    ],
+    dataProvider: [
+        {
+            category: "1993",
+            c2: "2411",
+            abc1: "6623"
+        },
+        {
+            category: "1995",
+            c2: "2398",
+            abc1: "6602"
+        },
+        {
+            category: "1997",
+            c2: "2433",
+            abc1: "6470"
+        },
+        {
+            category: "1999",
+            c2: "2441",
+            abc1: "6263"
+        },
+        {
+            category: "2001",
+            c2: "2492",
+            abc1: "6058"
+        },
+        {
+            category: "2002",
+            c2: "2409",
+            abc1: "5934"
+        },
+        {
+            category: "2003",
+            c2: "2417",
+            abc1: "5812"
+        },
+        {
+            category: "2004",
+            c2: "2435",
+            abc1: "5716"
+        },
+        {
+            category: "2005",
+            c2: "2741",
+            abc1: "5677"
+        },
+        {
+            category: "2006",
+            c2: "2871",
+            abc1: "6918"
+        },
+        {
+            category: "2007",
+            c2: "3388",
+            abc1: "7529"
+        },
+        {
+            category: "2008",
+            c2: "3339",
+            abc1: "7861"
+        },
+        {
+            category: "2009",
+            c2: "3974",
+            abc1: "7958"
+        },
+        {
+            category: "2010",
+            c2: "4217",
+            abc1: "7982"
+        },
+        {
+            category: "2011",
+            c2: "4407",
+            abc1: "8098"
+        },
+        {
+            category: "2012",
+            c2: "4698",
+            abc1: "8047"
+        },
+        {
+            category: "2013",
+            c2: "4860",
+            abc1: "8053"
+        },
+        {
+            category: "2014",
+            c2: "5128",
+            abc1: "8006"
+        },
+        {
+            category: "2015",
+            c2: "5658",
+            abc1: "8160"
+        }
+    ]
+});
+
+AmCharts.makeChart("chartdivF8", {
+    type: "pie",
+    balloonText: "[[title]]<br><span style='font-size:14px'><b>[[value]]</b> ([[percents]]%)</span>",
+    depth3D: 1,
+    startEffect: "easeInSine",
+    tabIndex: 0,
+    titleField: "category",
+    valueField: "column-1",
+    accessibleTitle: "",
+    fontSize: 14,
+    processTimeout: -1,
+    theme: "light",
+    thousandsSeparator: " ",
+    allLabels: [],
+    balloon: {},
+    legend: {
+        enabled: true,
+        align: "center",
+        combineLegend: true,
+        equalWidths: false,
+        fontSize: 15,
+        markerType: "diamond",
+        spacing: 64,
+        markerLabelGap: 13,
+        reversedOrder: true,
+        textClickEnabled: true,
+        valueText: ""
+    },
+    titles: [
+        {
+            id: "Title-1",
+            size: 20,
+            text: "Распределение по группам видов полезных ископаемых (количество)"
+        }
+    ],
+    dataProvider: [
+        {
+            category: "Металлические",
             "column-1": "6990"
         },
         {
-            "category": "Неметаллические",
+            category: "Неметаллические",
             "column-1": "4815"
         },
         {
-            "category": "Твердые горючие",
+            category: "Твердые горючие",
             "column-1": "2061"
         },
         {
-            "category": "Углеводородное сырье",
+            category: "Углеводородное сырье",
             "column-1": "3666"
         }
     ]
 });
 
-AmCharts.makeChart("chartdiv9", {
-    "type": "pie",
-    "balloonText": "[[title]]<br><span style='font-size:14px'><b>[[value]]</b> ([[percents]]%)</span>",
-    "depth3D": 1,
-    "colors": [
+AmCharts.makeChart("chartdivF9", {
+    type: "pie",
+    balloonText: "[[title]]<br><span style='font-size:14px'><b>[[value]]</b> ([[percents]]%)</span>",
+    depth3D: 1,
+    colors: [
         "#FF0F00",
         "#FF6600",
         "#FF9E01",
@@ -2273,61 +2431,61 @@ AmCharts.makeChart("chartdiv9", {
         "#990000",
         "#4B0C25"
     ],
-    "startEffect": "easeInSine",
-    "tabIndex": 0,
-    "titleField": "category",
-    "valueField": "column-1",
-    "accessibleTitle": "",
-    "fontSize": 14,
-    "processTimeout": -1,
-    "theme": "light",
-    "thousandsSeparator": " ",
-    "allLabels": [],
-    "balloon": {},
-    "legend": {
-        "enabled": true,
-        "align": "center",
-        "combineLegend": true,
-        "equalWidths": false,
-        "fontSize": 13,
-        "marginLeft": 33,
-        "marginRight": 39,
-        "marginTop": 9,
-        "markerLabelGap": 13,
-        "markerType": "diamond",
-        "reversedOrder": true,
-        "spacing": 64,
-        "textClickEnabled": true,
-        "valueText": ""
+    startEffect: "easeInSine",
+    tabIndex: 0,
+    titleField: "category",
+    valueField: "column-1",
+    accessibleTitle: "",
+    fontSize: 14,
+    processTimeout: -1,
+    theme: "light",
+    thousandsSeparator: " ",
+    allLabels: [],
+    balloon: {},
+    legend: {
+        enabled: true,
+        align: "center",
+        combineLegend: true,
+        equalWidths: false,
+        fontSize: 13,
+        marginLeft: 33,
+        marginRight: 39,
+        marginTop: 9,
+        markerLabelGap: 13,
+        markerType: "diamond",
+        reversedOrder: true,
+        spacing: 64,
+        textClickEnabled: true,
+        valueText: ""
     },
-    "titles": [
+    titles: [
         {
-            "id": "Title-1",
-            "size": 18,
-            "text": "Благородные полезные ископаемые"
+            id: "Title-1",
+            size: 18,
+            text: "Благородные полезные ископаемые"
         }
     ],
-    "dataProvider": [
+    dataProvider: [
         {
-            "category": "Серебро",
+            category: "Серебро",
             "column-1": "430"
         },
         {
-            "category": "Платиноиды",
+            category: "Платиноиды",
             "column-1": "149"
         },
         {
-            "category": "Золото",
+            category: "Золото",
             "column-1": "6108"
         }
     ]
 });
 
-AmCharts.makeChart("chartdiv10", {
-    "type": "pie",
-    "balloonText": "[[title]]<br><span style='font-size:14px'><b>[[value]]</b> ([[percents]]%)</span>",
-    "depth3D": 1,
-    "colors": [
+AmCharts.makeChart("chartdivF10", {
+    type: "pie",
+    balloonText: "[[title]]<br><span style='font-size:14px'><b>[[value]]</b> ([[percents]]%)</span>",
+    depth3D: 1,
+    colors: [
         "#FF0F00",
         "#FF6600",
         "#FF9E01",
@@ -2350,77 +2508,77 @@ AmCharts.makeChart("chartdiv10", {
         "#990000",
         "#4B0C25"
     ],
-    "startEffect": "easeInSine",
-    "tabIndex": 0,
-    "titleField": "category",
-    "valueField": "column-1",
-    "accessibleTitle": "",
-    "fontSize": 11,
-    "processTimeout": -1,
-    "theme": "light",
-    "thousandsSeparator": " ",
-    "allLabels": [],
-    "balloon": {},
-    "legend": {
-        "enabled": true,
-        "align": "center",
-        "combineLegend": true,
-        "equalWidths": false,
-        "fontSize": 13,
-        "marginLeft": 33,
-        "marginRight": 39,
-        "marginTop": 9,
-        "markerLabelGap": 13,
-        "markerType": "diamond",
-        "reversedOrder": true,
-        "spacing": 19,
-        "textClickEnabled": true,
-        "valueText": ""
+    startEffect: "easeInSine",
+    tabIndex: 0,
+    titleField: "category",
+    valueField: "column-1",
+    accessibleTitle: "",
+    fontSize: 11,
+    processTimeout: -1,
+    theme: "light",
+    thousandsSeparator: " ",
+    allLabels: [],
+    balloon: {},
+    legend: {
+        enabled: true,
+        align: "center",
+        combineLegend: true,
+        equalWidths: false,
+        fontSize: 13,
+        marginLeft: 33,
+        marginRight: 39,
+        marginTop: 9,
+        markerLabelGap: 13,
+        markerType: "diamond",
+        reversedOrder: true,
+        spacing: 19,
+        textClickEnabled: true,
+        valueText: ""
     },
-    "titles": [
+    titles: [
         {
-            "id": "Title-1",
-            "size": 18,
-            "text": "Цветные полезные ископаемые (base metals)"
+            id: "Title-1",
+            size: 18,
+            text: "Цветные полезные ископаемые (base metals)"
         }
     ],
-    "dataProvider": [
+    dataProvider: [
         {
-            "category": "Бокситы (алюминий)",
+            category: "Бокситы (алюминий)",
             "column-1": "57"
         },
         {
-            "category": "Вольфрама",
+            category: "Вольфрама",
             "column-1": "93"
         },
         {
-            "category": "Меди",
+            category: "Меди",
             "column-1": "117"
         },
         {
-            "category": "Свинец",
+            category: "Свинец",
             "column-1": "102"
         },
         {
-            "category": "Цинк",
+            category: "Цинк",
             "column-1": "152"
         },
         {
-            "category": "Титан",
+            category: "Титан",
             "column-1": "35"
         },
         {
-            "category": "Олово",
+            category: "Олово",
             "column-1": "274"
         }
     ]
 });
 
-AmCharts.makeChart("chartdiv11", {
-    "type": "pie",
-    "balloonText": "[[title]]<br><span style='font-size:14px'><b>[[value]]</b> ([[percents]]%)</span>",
-    "depth3D": 1,
-    "colors": [
+AmCharts.makeChart("chartdivF11", {
+    type: "pie",
+    balloonText: "[[title]]<br><span style='font-size:14px'><b>[[value]]</b> ([[percents]]%)</span>",
+    depth3D: 1,
+    colors: [
         "#FF0F00",
         "#FF6600",
         "#FF9E01",
@@ -2443,340 +2601,340 @@ AmCharts.makeChart("chartdiv11", {
         "#990000",
         "#4B0C25"
     ],
-    "startEffect": "easeInSine",
-    "tabIndex": 0,
-    "titleField": "category",
-    "valueField": "column-1",
-    "accessibleTitle": "",
-    "fontSize": 14,
-    "processTimeout": -1,
-    "theme": "light",
-    "thousandsSeparator": " ",
-    "allLabels": [],
-    "balloon": {},
-    "legend": {
-        "enabled": true,
-        "align": "center",
-        "combineLegend": true,
-        "equalWidths": false,
-        "fontSize": 13,
-        "marginLeft": 33,
-        "marginRight": 39,
-        "marginTop": 9,
-        "markerLabelGap": 13,
-        "markerType": "diamond",
-        "reversedOrder": true,
-        "spacing": 19,
-        "textClickEnabled": true,
-        "valueText": ""
+    startEffect: "easeInSine",
+    tabIndex: 0,
+    titleField: "category",
+    valueField: "column-1",
+    accessibleTitle: "",
+    fontSize: 14,
+    processTimeout: -1,
+    theme: "light",
+    thousandsSeparator: " ",
+    allLabels: [],
+    balloon: {},
+    legend: {
+        enabled: true,
+        align: "center",
+        combineLegend: true,
+        equalWidths: false,
+        fontSize: 13,
+        marginLeft: 33,
+        marginRight: 39,
+        marginTop: 9,
+        markerLabelGap: 13,
+        markerType: "diamond",
+        reversedOrder: true,
+        spacing: 19,
+        textClickEnabled: true,
+        valueText: ""
     },
-    "titles": [
+    titles: [
         {
-            "id": "Title-1",
-            "size": 18,
-            "text": "Полезные ископаемые"
+            id: "Title-1",
+            size: 18,
+            text: "Полезные ископаемые"
         }
     ],
-    "dataProvider": [
+    dataProvider: [
         {
-            "category": "Ванадия",
+            category: "Ванадия",
             "column-1": "26"
         },
         {
-            "category": "Висмута",
+            category: "Висмута",
             "column-1": "48"
         },
         {
-            "category": "Железные руды",
+            category: "Железные руды",
             "column-1": "230"
         },
         {
-            "category": "Кадмий",
+            category: "Кадмий",
             "column-1": "100"
         },
         {
-            "category": "Марганцевые руды",
+            category: "Марганцевые руды",
             "column-1": "29"
         },
         {
-            "category": "Молибдена",
+            category: "Молибдена",
             "column-1": "34"
         },
         {
-            "category": "Мышьяка",
+            category: "Мышьяка",
             "column-1": "17"
         },
         {
-            "category": "Нефелиновые руды",
+            category: "Нефелиновые руды",
             "column-1": "17"
         },
         {
-            "category": "Рассеянные элементы",
+            category: "Рассеянные элементы",
             "column-1": "153"
         },
         {
-            "category": "Редкоземельные элементы",
+            category: "Редкоземельные элементы",
             "column-1": "18"
         },
         {
-            "category": "Ртуть",
+            category: "Ртуть",
             "column-1": "26"
         },
         {
-            "category": "Стронций",
+            category: "Стронций",
             "column-1": "12"
         },
         {
-            "category": "Сурьма",
+            category: "Сурьма",
             "column-1": "15"
         },
         {
-            "category": "Уран",
+            category: "Уран",
             "column-1": "59"
         },
         {
-            "category": "Хромовые руды",
+            category: "Хромовые руды",
             "column-1": "25"
         },
         {
-            "category": "Цирконий",
+            category: "Цирконий",
             "column-1": "20"
         }
     ]
 });
 
-AmCharts.makeChart("chartdiv12", {
-    "type": "serial",
-    "categoryField": "category",
-    "startEffect": "easeInSine",
-    "fontSize": 14,
-    "theme": "light",
-    "thousandsSeparator": " ",
-    "categoryAxis": {
-        "gridPosition": "start",
-        "minVerticalGap": 34
+AmCharts.makeChart("chartdivF12", {
+    type: "serial",
+    categoryField: "category",
+    startEffect: "easeInSine",
+    fontSize: 14,
+    theme: "light",
+    thousandsSeparator: " ",
+    categoryAxis: {
+        gridPosition: "start",
+        minVerticalGap: 34
     },
-    "trendLines": [],
-    "graphs": [
+    trendLines: [],
+    graphs: [
         {
-            "balloonText": "[[title]] в [[category]]: <span style=\"font-size: 18px\"><br><b>[[value]]</b></span>",
-            "bullet": "round",
-            "bulletSize": 10,
-            "columnWidth": 0,
-            "id": "AmGraph-1",
-            "lineAlpha": 1,
-            "lineThickness": 3,
-            "title": "Твердые полезные ископаемые",
-            "valueField": "column-1"
+            balloonText: "[[title]] в [[category]]: <span style=\"font-size: 18px\"><br><b>[[value]]</b></span>",
+            bullet: "round",
+            bulletSize: 10,
+            columnWidth: 0,
+            id: "AmGraph-1",
+            lineAlpha: 1,
+            lineThickness: 3,
+            title: "Твердые полезные ископаемые",
+            valueField: "column-1"
         },
         {
-            "balloonText": "[[title]] в [[category]]: <span style=\"font-size: 18px\"><br><b>[[value]]</b></span>",
-            "bullet": "round",
-            "bulletSize": 10,
-            "id": "AmGraph-2",
-            "lineThickness": 3,
-            "title": "Углеводородное сырье ",
-            "valueField": "column-2"
+            balloonText: "[[title]] в [[category]]: <span style=\"font-size: 18px\"><br><b>[[value]]</b></span>",
+            bullet: "round",
+            bulletSize: 10,
+            id: "AmGraph-2",
+            lineThickness: 3,
+            title: "Углеводородное сырье ",
+            valueField: "column-2"
         },
         {
-            "balloonText": "[[title]] в [[category]]: <span style=\"font-size: 18px\"><br><b>[[value]]</b></span>",
-            "bullet": "round",
-            "bulletHitAreaSize": 0,
-            "bulletSize": 10,
-            "id": "AmGraph-3",
-            "legendAlpha": 0,
-            "lineThickness": 3,
-            "title": "Подземные воды ",
-            "topRadius": 0,
-            "valueField": "column-3"
+            balloonText: "[[title]] в [[category]]: <span style=\"font-size: 18px\"><br><b>[[value]]</b></span>",
+            bullet: "round",
+            bulletHitAreaSize: 0,
+            bulletSize: 10,
+            id: "AmGraph-3",
+            legendAlpha: 0,
+            lineThickness: 3,
+            title: "Подземные воды ",
+            topRadius: 0,
+            valueField: "column-3"
         }
     ],
-    "guides": [],
-    "valueAxes": [
+    guides: [],
+    valueAxes: [
         {
-            "id": "ValueAxis-1",
-            "title": "кол-во",
-            "titleFontSize": 16
+            id: "ValueAxis-1",
+            title: "кол-во",
+            titleFontSize: 16
         }
     ],
-    "allLabels": [],
-    "balloon": {},
-    "legend": {
-        "enabled": true,
-        "useGraphSettings": true
+    allLabels: [],
+    balloon: {},
+    legend: {
+        enabled: true,
+        useGraphSettings: true
     },
-    "titles": [
+    titles: [
         {
-            "id": "Title-1",
-            "size": 20,
-            "text": "Количество месторождений, прошедших экспертизу запасов "
+            id: "Title-1",
+            size: 20,
+            text: "Количество месторождений, прошедших экспертизу запасов "
         }
     ],
-    "dataProvider": [
+    dataProvider: [
         {
-            "category": "1990",
+            category: "1990",
             "column-1": "13",
             "column-2": "",
             "column-3": "52"
         },
         {
-            "category": "1991",
+            category: "1991",
             "column-1": "14",
             "column-2": "",
             "column-3": "72"
         },
         {
-            "category": "1992",
+            category: "1992",
             "column-1": "83",
             "column-2": "45",
             "column-3": "65"
         },
         {
-            "category": "1993",
+            category: "1993",
             "column-1": "33",
             "column-2": "55",
             "column-3": "49"
         },
         {
-            "category": "1994",
+            category: "1994",
             "column-1": "25",
             "column-2": "41",
             "column-3": "40"
         },
         {
-            "category": "1995",
+            category: "1995",
             "column-1": "25",
             "column-2": "33",
             "column-3": "45"
         },
         {
-            "category": "1996",
+            category: "1996",
             "column-1": "18",
             "column-2": "22",
             "column-3": "45"
         },
         {
-            "category": "1997",
+            category: "1997",
             "column-1": "25",
             "column-2": "26",
             "column-3": "33"
         },
         {
-            "category": "1998",
+            category: "1998",
             "column-1": "40",
             "column-2": "12",
             "column-3": "38"
         },
         {
-            "category": "1999",
+            category: "1999",
             "column-1": "34",
             "column-2": "26",
             "column-3": "44"
         },
         {
-            "category": "2000",
+            category: "2000",
             "column-1": "43",
             "column-2": "32",
             "column-3": "76"
         },
         {
-            "category": "2001",
+            category: "2001",
             "column-1": "43",
             "column-2": "27",
             "column-3": "109"
         },
         {
-            "category": "2002",
+            category: "2002",
             "column-1": "49",
             "column-2": "31",
             "column-3": "138"
         },
         {
-            "category": "2003",
+            category: "2003",
             "column-1": "51",
             "column-2": "35",
             "column-3": "143"
         },
         {
-            "category": "2004",
+            category: "2004",
             "column-1": "79",
             "column-2": "23",
             "column-3": "196"
         },
         {
-            "category": "2005",
+            category: "2005",
             "column-1": "56",
             "column-2": "52",
             "column-3": "137"
         },
         {
-            "category": "2006",
+            category: "2006",
             "column-1": "36",
             "column-2": "40",
             "column-3": "202"
         },
         {
-            "category": "2007",
+            category: "2007",
             "column-1": "76",
             "column-2": "19",
             "column-3": "314"
         },
         {
-            "category": "2008",
+            category: "2008",
             "column-1": "83",
             "column-2": "171",
             "column-3": "393"
         },
         {
-            "category": "2009",
+            category: "2009",
             "column-1": "86",
             "column-2": "157",
             "column-3": "526"
         },
         {
-            "category": "2010",
+            category: "2010",
             "column-1": "103",
             "column-2": "132",
             "column-3": "614"
         },
         {
-            "category": "2011",
+            category: "2011",
             "column-1": "100",
             "column-2": "125",
             "column-3": "715"
         },
         {
-            "category": "2012",
+            category: "2012",
             "column-1": "155",
             "column-2": "107",
             "column-3": "1125"
         },
         {
-            "category": "2013",
+            category: "2013",
             "column-1": "154",
             "column-2": "99",
             "column-3": "1160"
         },
         {
-            "category": "2014",
+            category: "2014",
             "column-1": "725",
             "column-2": "199",
             "column-3": "1790"
         },
         {
-            "category": "2015",
+            category: "2015",
             "column-1": "837",
             "column-2": "274",
             "column-3": "1368"
         },
         {
-            "category": "2016",
+            category: "2016",
             "column-1": "757",
             "column-2": "348",
             "column-3": "954"
         },
         {
-            "category": "2017",
+            category: "2017",
             "column-1": "664",
             "column-2": "62",
             "column-3": "609"
@@ -2784,142 +2942,142 @@ AmCharts.makeChart("chartdiv12", {
     ]
 });
 
-AmCharts.makeChart("chartdiv13", {
-    "type": "serial",
-    "categoryField": "category",
-    "startEffect": "easeInSine",
-    "fontSize": 16,
-    "theme": "light",
-    "thousandsSeparator": " ",
-    "categoryAxis": {
-        "gridPosition": "start",
-        "minVerticalGap": 34
+AmCharts.makeChart("chartdivF13", {
+    type: "serial",
+    categoryField: "category",
+    startEffect: "easeInSine",
+    fontSize: 16,
+    theme: "light",
+    thousandsSeparator: " ",
+    categoryAxis: {
+        gridPosition: "start",
+        minVerticalGap: 34
     },
-    "trendLines": [],
-    "graphs": [
+    trendLines: [],
+    graphs: [
         {
-            "balloonText": "[[title]] в [[category]]: <span style=\"font-size: 18px\"><br><b>[[value]]</b></span>",
-            "bullet": "round",
-            "bulletSize": 10,
-            "columnWidth": 0,
-            "id": "AmGraph-1",
-            "lineAlpha": 1,
-            "lineThickness": 3,
-            "title": "Твердые полезные ископаемые",
-            "valueField": "column-1"
+            balloonText: "[[title]] в [[category]]: <span style=\"font-size: 18px\"><br><b>[[value]]</b></span>",
+            bullet: "round",
+            bulletSize: 10,
+            columnWidth: 0,
+            id: "AmGraph-1",
+            lineAlpha: 1,
+            lineThickness: 3,
+            title: "Твердые полезные ископаемые",
+            valueField: "column-1"
         },
         {
-            "balloonText": "[[title]] в [[category]]: <span style=\"font-size: 18px\"><br><b>[[value]]</b></span>",
-            "bullet": "round",
-            "bulletSize": 10,
-            "id": "AmGraph-2",
-            "lineThickness": 3,
-            "title": "Углеводородное сырье ",
-            "valueField": "column-2"
+            balloonText: "[[title]] в [[category]]: <span style=\"font-size: 18px\"><br><b>[[value]]</b></span>",
+            bullet: "round",
+            bulletSize: 10,
+            id: "AmGraph-2",
+            lineThickness: 3,
+            title: "Углеводородное сырье ",
+            valueField: "column-2"
         },
         {
-            "balloonText": "[[title]] в [[category]]: <span style=\"font-size: 18px\"><br><b>[[value]]</b></span>",
-            "bullet": "round",
-            "bulletHitAreaSize": 0,
-            "bulletSize": 10,
-            "id": "AmGraph-3",
-            "legendAlpha": 0,
-            "lineThickness": 3,
-            "title": "Подземные воды ",
-            "topRadius": 0,
-            "valueField": "column-3"
+            balloonText: "[[title]] в [[category]]: <span style=\"font-size: 18px\"><br><b>[[value]]</b></span>",
+            bullet: "round",
+            bulletHitAreaSize: 0,
+            bulletSize: 10,
+            id: "AmGraph-3",
+            legendAlpha: 0,
+            lineThickness: 3,
+            title: "Подземные воды ",
+            topRadius: 0,
+            valueField: "column-3"
         }
     ],
-    "guides": [],
-    "valueAxes": [
+    guides: [],
+    valueAxes: [
         {
-            "id": "ValueAxis-1",
-            "title": "кол-во",
-            "titleFontSize": 16
+            id: "ValueAxis-1",
+            title: "кол-во",
+            titleFontSize: 16
         }
     ],
-    "allLabels": [],
-    "balloon": {},
-    "legend": {
-        "enabled": true,
-        "useGraphSettings": true
+    allLabels: [],
+    balloon: {},
+    legend: {
+        enabled: true,
+        useGraphSettings: true
     },
-    "titles": [
+    titles: [
         {
-            "id": "Title-1",
-            "size": 20,
-            "text": "Количество месторождений, прошедших экспертизу проектов отработки"
+            id: "Title-1",
+            size: 20,
+            text: "Количество месторождений, прошедших экспертизу проектов отработки"
         }
     ],
-    "dataProvider": [
+    dataProvider: [
         {
-            "category": "2006",
+            category: "2006",
             "column-1": "",
             "column-2": "2",
             "column-3": ""
         },
         {
-            "category": "2007",
+            category: "2007",
             "column-1": "196",
             "column-2": "4",
             "column-3": ""
         },
         {
-            "category": "2008",
+            category: "2008",
             "column-1": "166",
             "column-2": "6",
             "column-3": ""
         },
         {
-            "category": "2009",
+            category: "2009",
             "column-1": "191",
             "column-2": "7",
             "column-3": ""
         },
         {
-            "category": "2010",
+            category: "2010",
             "column-1": "389",
             "column-2": "340",
             "column-3": "80"
         },
         {
-            "category": "2011",
+            category: "2011",
             "column-1": "558",
             "column-2": "770",
             "column-3": "271"
         },
         {
-            "category": "2012",
+            category: "2012",
             "column-1": "1054",
             "column-2": "823",
             "column-3": "310"
         },
         {
-            "category": "2013",
+            category: "2013",
             "column-1": "1454",
             "column-2": "817",
             "column-3": "623"
         },
         {
-            "category": "2014",
+            category: "2014",
             "column-1": "834",
             "column-2": "863",
             "column-3": "1093"
         },
         {
-            "category": "2015",
+            category: "2015",
             "column-1": "983",
             "column-2": "820",
             "column-3": "540"
         },
         {
-            "category": "2016",
+            category: "2016",
             "column-1": "1087",
             "column-2": "278",
             "column-3": "623"
         },
         {
-            "category": "2017",
+            category: "2017",
             "column-1": "1023",
             "column-2": "96",
             "column-3": "535"
@@ -2927,284 +3085,7 @@ AmCharts.makeChart("chartdiv13", {
     ]
 });
 
-AmCharts.makeChart("chartdiv14", {
-    "type": "serial",
-    "categoryField": "category",
-    "startDuration": 1,
-    "fontSize": 14,
-    "thousandsSeparator": " ",
-    "theme": "default",
-    "categoryAxis": {
-        "gridPosition": "start"
-    },
-    "trendLines": [],
-    "graphs": [
-        {
-            "balloonText": "[[title]] в [[category]]: <br><span style=\"font-size:18px\"><b>[[value]]</b></span>",
-            "fillAlphas": 1,
-            "id": "AmGraph-1",
-            "title": "Выдано лицензий по результатам конкурса",
-            "type": "column",
-            "valueField": "column-1"
-        },
-        {
-            "balloonText": "[[title]] в [[category]]: <br><span style=\"font-size:18px\"><b>[[value]]</b></span>",
-            "fillAlphas": 1,
-            "id": "AmGraph-2",
-            "title": "Выдано лицензий по результатам аукциона",
-            "type": "column",
-            "valueField": "column-2"
-        },
-        {
-            "balloonText": "[[title]] в [[category]]: <br><span style=\"font-size:18px\"><b>[[value]]</b></span>",
-            "fillAlphas": 1,
-            "id": "AmGraph-3",
-            "title": "Выдано лицензий без конкурса для геологического изучения",
-            "type": "column",
-            "valueField": "column-3"
-        },
-        {
-            "balloonText": "[[title]] в [[category]]: <br><span style=\"font-size:18px\"><b>[[value]]</b></span>",
-            "fillAlphas": 1,
-            "fillColors": "#E994E0",
-            "id": "AmGraph-4",
-            "lineColor": "#E994E0",
-            "title": "Выдано лицензий в порядке переоформления (ст.17-1",
-            "type": "column",
-            "valueField": "column-4"
-        },
-        {
-            "balloonText": "[[title]] в [[category]]: <br><span style=\"font-size:18px\"><b>[[value]]</b></span>",
-            "fillAlphas": 1,
-            "fillColors": "#27CEDE",
-            "id": "AmGraph-5",
-            "lineColor": "#27CEDE",
-            "title": "Выдано лицензий по п.19 \"Положения о порядке лицензирования пользования недрами\"",
-            "type": "column",
-            "valueField": "column-5"
-        },
-        {
-            "balloonText": "[[title]] в [[category]]: <br><span style=\"font-size:18px\"><b>[[value]]</b></span>",
-            "fillAlphas": 1,
-            "fillColors": "#9DBC6F",
-            "id": "AmGraph-6",
-            "lineColor": "#9DBC6F",
-            "title": "Выдано лицензий в соответствии с ФЗ \"О соглашениях о разделе продукции\"",
-            "type": "column",
-            "valueField": "column-6"
-        },
-        {
-            "balloonText": "[[title]] в [[category]]: <br><span style=\"font-size:18px\"><b>[[value]]</b></span>",
-            "fillAlphas": 1,
-            "fillColors": "#F0C083",
-            "id": "AmGraph-7",
-            "lineColor": "#F0C083",
-            "title": "Выдано лицензий при установлении факта открытия месторождения",
-            "type": "column",
-            "valueField": "column-7"
-        },
-        {
-            "balloonText": "[[title]] в [[category]]: <br><span style=\"font-size:18px\"><b>[[value]]</b></span>",
-            "fillAlphas": 1,
-            "fillColors": "#DEE38F",
-            "id": "AmGraph-8",
-            "lineColor": "#DEE38F",
-            "title": "Другие основания в соответствии с законодательством РФ",
-            "type": "column",
-            "valueField": "column-8"
-        },
-        {
-            "animationPlayed": true,
-            "balloonText": "[[title]] в [[category]]: <br><span style=\"font-size:18px\"><b>[[value]]</b></span>",
-            "bullet": "round",
-            "bulletSize": 10,
-            "id": "AmGraph-9",
-            "lineThickness": 2,
-            "title": "Выдано лицензий за отчетный период",
-            "valueField": "column-9"
-        }
-    ],
-    "guides": [],
-    "valueAxes": [
-        {
-            "id": "ValueAxis-1",
-            "stackType": "regular",
-            "title": "кол-во"
-        }
-    ],
-    "allLabels": [],
-    "balloon": {},
-    "legend": {
-        "enabled": true,
-        "fontSize": 10,
-        "useGraphSettings": true
-    },
-    "titles": [
-        {
-            "id": "Title-1",
-            "size": 18,
-            "text": "Сведения о кол-ве выданных лицензий с основанием выдачи за 2004-2016 гг."
-        }
-    ],
-    "dataProvider": [
-        {
-            "category": "2004",
-            "column-1": "159",
-            "column-2": "163",
-            "column-3": "421",
-            "column-4": "1283",
-            "column-5": "201",
-            "column-6": "1",
-            "column-7": "42",
-            "column-8": "747",
-            "column-9": "3017"
-        },
-        {
-            "category": "2005",
-            "column-1": "130",
-            "column-2": "505",
-            "column-3": "267",
-            "column-4": "981",
-            "column-5": "94",
-            "column-6": "3",
-            "column-7": "25",
-            "column-8": "1073",
-            "column-9": "3078"
-        },
-        {
-            "category": "2006",
-            "column-1": "83",
-            "column-2": "517",
-            "column-3": "414",
-            "column-4": "974",
-            "column-5": "82",
-            "column-6": "",
-            "column-7": "38",
-            "column-8": "915",
-            "column-9": "3023"
-        },
-        {
-            "category": "2007",
-            "column-1": "89",
-            "column-2": "515",
-            "column-3": "312",
-            "column-4": "973",
-            "column-5": "",
-            "column-6": "",
-            "column-7": "76",
-            "column-8": "1162",
-            "column-9": "3127"
-        },
-        {
-            "category": "2008",
-            "column-1": "64",
-            "column-2": "328",
-            "column-3": "204",
-            "column-4": "1007",
-            "column-5": "",
-            "column-6": "",
-            "column-7": "31",
-            "column-8": "847",
-            "column-9": "2481"
-        },
-        {
-            "category": "2009",
-            "column-1": "13",
-            "column-2": "80",
-            "column-3": "241",
-            "column-4": "596",
-            "column-5": "",
-            "column-6": "",
-            "column-7": "39",
-            "column-8": "931",
-            "column-9": "1900"
-        },
-        {
-            "category": "2010",
-            "column-1": "24",
-            "column-2": "338",
-            "column-3": "179",
-            "column-4": "618",
-            "column-5": "59",
-            "column-6": "",
-            "column-7": "97",
-            "column-8": "920",
-            "column-9": "2235"
-        },
-        {
-            "category": "2011",
-            "column-1": "25",
-            "column-2": "352",
-            "column-3": "286",
-            "column-4": "600",
-            "column-5": "69",
-            "column-6": "",
-            "column-7": "37",
-            "column-8": "1075",
-            "column-9": "2444"
-        },
-        {
-            "category": "2012",
-            "column-1": "51",
-            "column-2": "332",
-            "column-3": "339",
-            "column-4": "500",
-            "column-5": "117",
-            "column-6": "",
-            "column-7": "31",
-            "column-8": "1215",
-            "column-9": "2585"
-        },
-        {
-            "category": "2013",
-            "column-1": "",
-            "column-2": "",
-            "column-3": "",
-            "column-4": "",
-            "column-5": "",
-            "column-6": "",
-            "column-7": "",
-            "column-8": "",
-            "column-9": ""
-        },
-        {
-            "category": "2014",
-            "column-1": "22",
-            "column-2": "401",
-            "column-3": "469",
-            "column-4": "623",
-            "column-5": "57",
-            "column-6": "0",
-            "column-7": "48",
-            "column-8": "984",
-            "column-9": "2604"
-        },
-        {
-            "category": "2015",
-            "column-1": "27",
-            "column-2": "375",
-            "column-3": "564",
-            "column-4": "684",
-            "column-5": "106",
-            "column-6": "0",
-            "column-7": "28",
-            "column-8": "1258",
-            "column-9": "3042"
-        },
-        {
-            "category": "2016",
-            "column-1": "23",
-            "column-2": "349",
-            "column-3": "661",
-            "column-4": "1485",
-            "column-5": "34",
-            "column-6": "0",
-            "column-7": "38",
-            "column-8": "1140",
-            "column-9": "3730"
-        }
-    ]
-});
+
 function modalOpen() {
     $(".modals").show();
 }
@@ -3305,10 +3186,10 @@ function modalClose12() {
 function modalOpen13() {
     $(".modals13").show();
 }
-
 function modalClose13() {
     $(".modals13").hide();
 }
+
 function modalOpen14() {
     $(".modals14").show();
 }
@@ -3316,16 +3197,17 @@ function modalClose14() {
     $(".modals14").hide();
 }
 
-function modalOpen15() {
-    $(".modals15").show();
-}
-function modalClose15() {
-    $(".modals15").hide();
-}
 
-function modalOpen16() {
-    $(".modals16").show();
-}
-function modalClose16() {
-    $(".modals16").hide();
-}
+// function modalOpen15() {
+//     $(".modals15").show();
+// }
+// function modalClose15() {
+//     $(".modals15").hide();
+// }
+
+// function modalOpen16() {
+//     $(".modals16").show();
+// }
+// function modalClose16() {
+//     $(".modals16").hide();
+// }
