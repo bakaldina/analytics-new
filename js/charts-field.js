@@ -2665,6 +2665,169 @@ AmCharts.makeChart("chartdivF16", {
     ]
 });
 
+AmCharts.makeChart("chartdivF17", {
+    type: "serial",
+    categoryField: "category",
+    columnSpacing: 0,
+    thousandsSeparator: " ",
+    startDuration: 1,
+    fontSize: 16,
+    colors: ["#67b7dc", "#fdd400"],
+    theme: "light",
+    categoryAxis: {
+        gridPosition: "start"
+    },
+    trendLines: [],
+    graphs: [
+        {
+            balloonText:
+                "<b>[[title]]</b> в тоннах <br>[[category]]: <b>[[value]]</b>",
+            fillAlphas: 1,
+            id: "AmGraph-1",
+            title: "Запасы категорий A+B+C1",
+            type: "column",
+            fontSize: 10,
+            tabIndex: 5,
+            labelText: "[[value]]",
+            valueField: "abc1"
+        },
+        {
+            balloonText:
+                "<b>[[title]]</b> в тоннах <br>[[category]]: <b>[[value]]</b>",
+            fillAlphas: 1,
+            id: "AmGraph-2",
+            title: "Запасы категорий C2",
+            fontSize: 10,
+            tabIndex: 5,
+            labelText: "[[value]]",
+            type: "column",
+            valueField: "c2"
+        }
+    ],
+    guides: [],
+    valueAxes: [
+        {
+            id: "ValueAxis-1",
+            title: "млрд. тонн"
+        }
+    ],
+    allLabels: [],
+    balloon: {},
+    legend: {
+        enabled: true,
+        useGraphSettings: true
+    },
+    titles: [
+        {
+            id: "Title-1",
+            size: 24,
+            text: "Динамика движения запасов в 1991–2015 гг., тонн"
+        }
+    ],
+    dataProvider: [
+        {
+            category: "1991",
+            c2: "41.9",
+            abc1: "55.4"
+        },
+        {
+            category: "1993",
+            c2: "43.8",
+            abc1: "57.6"
+        },
+        {
+            category: "1995",
+            c2: "43.8",
+            abc1: "57.2"
+        },
+        {
+            category: "1997",
+            c2: "43.8",
+            abc1: "56.8"
+        },
+        {
+            category: "1999",
+            c2: "44.2",
+            abc1: "56.9"
+        },
+        {
+            category: "2001",
+            c2: "44.2",
+            abc1: "56.6"
+        },
+        {
+            category: "2002",
+            c2: "43.9",
+            abc1: "56.3"
+        },
+        {
+            category: "2003",
+            c2: "43.9",
+            abc1: "56.1"
+        },
+        {
+            category: "2004",
+            c2: "43.9",
+            abc1: "55.8"
+        },
+        {
+            category: "2005",
+            c2: "43.9",
+            abc1: "55.6"
+        },
+        {
+            category: "2006",
+            c2: "43.6",
+            abc1: "55.9"
+        },
+        {
+            category: "2007",
+            c2: "43.6",
+            abc1: "55.6"
+        },
+        {
+            category: "2008",
+            c2: "43.6",
+            abc1: "55.3"
+        },
+        {
+            category: "2009",
+            c2: "43.9",
+            abc1: "55.5"
+        },
+        {
+            category: "2010",
+            c2: "43.8",
+            abc1: "55.2"
+        },
+        {
+            category: "2011",
+            c2: "43.8",
+            abc1: "55.1"
+        },
+        {
+            category: "2012",
+            c2: "45.2",
+            abc1: "55.5"
+        },
+        {
+            category: "2013",
+            c2: "48.1",
+            abc1: "57.9"
+        },
+        {
+            category: "2014",
+            c2: "58.8",
+            abc1: "50.6"
+        },
+        {
+            category: "2015",
+            c2: "58.4",
+            abc1: "51.6"
+        }
+    ]
+});
+
 AmCharts.makeChart("chartdivF8", {
     type: "pie",
     balloonText: "[[title]]<br><span style='font-size:14px'><b>[[value]]</b> ([[percents]]%)</span>",
@@ -3526,4 +3689,10 @@ function modalOpen16() {
 }
 function modalClose16() {
     $(".modals16").hide();
+}
+function modalOpen17() {
+    $(".modals17").show();
+}
+function modalClose17() {
+    $(".modals17").hide();
 }
