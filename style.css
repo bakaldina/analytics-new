@@ -33,6 +33,9 @@ body {
 .menu-check {
   display: none;
 }
+.menu1-check {
+  display: none;
+}
 h1 {
   color: #fff;
   letter-spacing: 3px;
@@ -215,8 +218,6 @@ h4 {
 }
 .menu li {
   text-transform: uppercase;
-  margin-right: 20px;
-  margin-left: 17px;
 }
 .menu .button {
   color: #fff;
@@ -248,7 +249,7 @@ h4 {
   max-width: 1358px;
 }
 .main .nav {
-  max-width: 180px;
+  max-width: 140px;
   background: linear-gradient(to bottom, #7894bc, #c3d1e5);
   box-shadow: 5px 8px 11px -5px grey;
 }
@@ -667,6 +668,85 @@ h4 {
     margin: 0;
   }
   /* Мэйн моб */
+  .menu ul {
+    display: flex;
+    justify-content: space-evenly;
+    padding-left: 45px;
+  }
+  .menu .button {
+    margin-top: 14px;
+    font-size: 16px;
+  }
+  .nav {
+    position: absolute;
+    margin-top: 1px;
+    background-color: #7894bc;
+    width: 100%;
+    -webkit-transform: translateX(-115%);
+    transform: translateX(-115%);
+    z-index: 14;
+    -webkit-transition: 0.8s;
+    transition: 0.8s;
+  }
+  .menu1-check:checked ~ .main .nav {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    margin: 0;
+  }
+  .menu1__panel_burger {
+    width: 80px;
+    position: relative;
+    cursor: pointer;
+  }
+  .menu1__panel_burger span {
+    -webkit-transition: -webkit-transform 0.5s;
+    transition: -webkit-transform 0.5s;
+    transition: transform 0.5s;
+    transition: transform 0.5s, -webkit-transform 0.5s;
+    display: block;
+    position: absolute;
+    left: 10px;
+    top: -24px;
+    right: 35px;
+    height: 3px;
+    background-color: #ff1550;
+  }
+  .menu1__panel_burger span::before {
+    position: absolute;
+    display: block;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #ff1550;
+    content: "";
+    top: -10px;
+  }
+  .menu1__panel_burger span::after {
+    position: absolute;
+    display: block;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #ff1550;
+    content: "";
+    bottom: -10px;
+  }
+  .menu1-check:checked + .menu1__panel_burger span {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+  .menu1-check:checked + .menu1__panel_burger span:before {
+    top: -7px;
+    -webkit-transform: translateX(19px) translateY(2px) rotate(45deg);
+    transform: translateX(19px) translateY(2px) rotate(45deg);
+    width: 50%;
+  }
+  .menu1-check:checked + .menu1__panel_burger span:after {
+    bottom: -7px;
+    -webkit-transform: translateX(19px) translateY(-2px) rotate(-45deg);
+    transform: translateX(19px) translateY(-2px) rotate(-45deg);
+    width: 50%;
+  }
   .main__container {
     padding: 0 10px;
   }
@@ -683,11 +763,30 @@ h4 {
     transform: translate(-50%, -50%);
     font-size: 40px;
   }
-  .row__container1 {
-    flex-direction: column;
+  h2 {
+    padding: 0 5px;
   }
-  .row__container2 {
+  h4 {
+    left: 0;
+  }
+  .main .row__container1 {
     flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .main .row__container1_item1 {
+    min-height: 210px;
+    border-bottom: 1px solid #efefef;
+  }
+  .main .row__container2 {
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .main .row__container2_item2 {
+    margin: 0 auto;
+    margin-bottom: 10px;
+    max-width: 100%;
   }
   .amChartsLegend {
     position: relative;
@@ -762,5 +861,16 @@ h4 {
     display: inline-block;
     margin-right: 6%;
     font-family: "RobotoBold";
+  }
+}
+@media screen and (max-width: 330px) {
+  .menu ul {
+    display: flex;
+    justify-content: space-evenly;
+    padding-left: 45px;
+  }
+  .menu .button {
+    margin-top: 18px;
+    font-size: 12px;
   }
 }
