@@ -41,7 +41,6 @@ $("#menu_icon").on("click", function () {
 });
 
 
-
 // function modalCreate(id) {
 //   console.log(id);
 //   var html =

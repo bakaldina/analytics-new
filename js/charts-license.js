@@ -276,10 +276,11 @@ AmCharts.makeChart("chartdivL1", {
         }
     ]
 });
-
-function modalOpenL1() {
-    $(".modalsL1").show();
-}
-function modalCloseL1() {
-    $(".modalsL1").hide();
+if (window.screen.width > '768') {
+    function modalOpenL1() {
+        $(".modalsL1").show();
+    }
+    function modalCloseL1() {
+        $(".modalsL1").hide();
+    }
 }

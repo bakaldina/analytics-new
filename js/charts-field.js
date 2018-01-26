@@ -3564,135 +3564,136 @@ AmCharts.makeChart("chartdivF13", {
     ]
 });
 
+if (window.screen.width > '768') {
+    function modalOpen() {
+        $(".modals").show();
+    }
 
-function modalOpen() {
-    $(".modals").show();
-}
+    function modalClose() {
+        $(".modals").hide();
+    }
 
-function modalClose() {
-    $(".modals").hide();
-}
+    function modalOpen1() {
+        $(".modals1").show();
+    }
 
-function modalOpen1() {
-    $(".modals1").show();
-}
+    function modalClose1() {
+        $(".modals1").hide();
+    }
 
-function modalClose1() {
-    $(".modals1").hide();
-}
+    function modalOpen2() {
+        $(".modals2").show();
+    }
 
-function modalOpen2() {
-    $(".modals2").show();
-}
+    function modalClose2() {
+        $(".modals2").hide();
+    }
 
-function modalClose2() {
-    $(".modals2").hide();
-}
+    function modalOpen3() {
+        $(".modals3").show();
+    }
 
-function modalOpen3() {
-    $(".modals3").show();
-}
+    function modalClose3() {
+        $(".modals3").hide();
+    }
 
-function modalClose3() {
-    $(".modals3").hide();
-}
+    function modalOpen4() {
+        $(".modals4").show();
+    }
 
-function modalOpen4() {
-    $(".modals4").show();
-}
+    function modalClose4() {
+        $(".modals4").hide();
+    }
 
-function modalClose4() {
-    $(".modals4").hide();
-}
+    function modalOpen5() {
+        $(".modals5").show();
+    }
 
-function modalOpen5() {
-    $(".modals5").show();
-}
+    function modalClose5() {
+        $(".modals5").hide();
+    }
+    function modalOpen6() {
+        $(".modals6").show();
+    }
 
-function modalClose5() {
-    $(".modals5").hide();
-}
-function modalOpen6() {
-    $(".modals6").show();
-}
+    function modalClose6() {
+        $(".modals6").hide();
+    }
 
-function modalClose6() {
-    $(".modals6").hide();
-}
+    function modalOpen7() {
+        $(".modals7").show();
+    }
+    function modalClose7() {
+        $(".modals7").hide();
+    }
 
-function modalOpen7() {
-    $(".modals7").show();
-}
-function modalClose7() {
-    $(".modals7").hide();
-}
+    function modalOpen8() {
+        $(".modals8").show();
+    }
+    function modalClose8() {
+        $(".modals8").hide();
+    }
 
-function modalOpen8() {
-    $(".modals8").show();
-}
-function modalClose8() {
-    $(".modals8").hide();
-}
+    function modalOpen9() {
+        $(".modals9").show();
+    }
+    function modalClose9() {
+        $(".modals9").hide();
+    }
 
-function modalOpen9() {
-    $(".modals9").show();
-}
-function modalClose9() {
-    $(".modals9").hide();
-}
+    function modalOpen10() {
+        $(".modals10").show();
+    }
+    function modalClose10() {
+        $(".modals10").hide();
+    }
 
-function modalOpen10() {
-    $(".modals10").show();
-}
-function modalClose10() {
-    $(".modals10").hide();
-}
+    function modalOpen11() {
+        $(".modals11").show();
+    }
+    function modalClose11() {
+        $(".modals11").hide();
+    }
 
-function modalOpen11() {
-    $(".modals11").show();
-}
-function modalClose11() {
-    $(".modals11").hide();
-}
+    function modalOpen12() {
+        $(".modals12").show();
+    }
+    function modalClose12() {
+        $(".modals12").hide();
+    }
 
-function modalOpen12() {
-    $(".modals12").show();
-}
-function modalClose12() {
-    $(".modals12").hide();
-}
+    function modalOpen13() {
+        $(".modals13").show();
+    }
+    function modalClose13() {
+        $(".modals13").hide();
+    }
 
-function modalOpen13() {
-    $(".modals13").show();
-}
-function modalClose13() {
-    $(".modals13").hide();
-}
-
-function modalOpen14() {
-    $(".modals14").show();
-}
-function modalClose14() {
-    $(".modals14").hide();
-}
+    function modalOpen14() {
+        $(".modals14").show();
+    }
+    function modalClose14() {
+        $(".modals14").hide();
+    }
 
 
-function modalOpen15() {
-    $(".modals15").show();
-}
-function modalClose15() {
-    $(".modals15").hide();
-}
+    function modalOpen15() {
+        $(".modals15").show();
+    }
+    function modalClose15() {
+        $(".modals15").hide();
+    }
 
-function modalOpen16() {
-    $(".modals16").show();
-}
-function modalClose16() {
-    $(".modals16").hide();
-}
-function modalOpen17() {
-    $(".modals17").show();
-}
-function modalClose17() {
-    $(".modals17").hide();
+    function modalOpen16() {
+        $(".modals16").show();
+    }
+    function modalClose16() {
+        $(".modals16").hide();
+    }
+    function modalOpen17() {
+        $(".modals17").show();
+    }
+    function modalClose17() {
+        $(".modals17").hide();
+    }
 }
