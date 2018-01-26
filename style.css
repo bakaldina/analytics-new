@@ -674,8 +674,9 @@ h4 {
     padding-left: 45px;
   }
   .menu .button {
-    margin-top: 14px;
-    font-size: 16px;
+    margin-top: 17px;
+    font-size: 15px;
+    padding: 0;
   }
   .nav {
     position: absolute;
@@ -705,9 +706,9 @@ h4 {
     transition: transform 0.5s, -webkit-transform 0.5s;
     display: block;
     position: absolute;
-    left: 10px;
-    top: -24px;
-    right: 35px;
+    left: 12px;
+    top: -26px;
+    right: 38px;
     height: 3px;
     background-color: #ff1550;
   }
