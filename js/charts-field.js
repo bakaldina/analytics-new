@@ -3643,7 +3643,8 @@ AmCharts.makeChart("chartdivFA1", {
     {
       id: "Title-1",
       size: 24,
-      text: "Динамика движения запасов в 1995–2015 гг., млн. тонн"
+      text:
+        "Динамика движения запасов  нефелиновых руд в 1995–2015 гг., млн. тонн"
     }
   ],
   dataProvider: [
@@ -3768,118 +3769,108 @@ AmCharts.makeChart("chartdivFA2", {
   dataProvider: [
     {
       year: 1991,
-      expenses: 179.27,
-      income: 325
+      expenses: 3817,
+      income: 1660
     },
     {
       year: 1993,
-      expenses: 179.27,
-      income: 150
+      expenses: 3443,
+      income: 1000
     },
     {
       year: 1995,
-      expenses: 147.75,
-      income: 140
+      expenses: 2333,
+      income: 1000
     },
     {
       year: 1997,
-      expenses: 144,
-      income: 102
-    },
-    {
-      year: 1998,
-      expenses: 144,
-      income: 89
+      expenses: 2716,
+      income: 950
     },
     {
       year: 1999,
-      expenses: 146,
-      income: 51
+      expenses: 3159,
+      income: 917
     },
     {
       year: 2000,
-      expenses: 143,
-      income: 62
+      expenses: 3812,
+      income: 883
     },
     {
       year: 2001,
-      expenses: 189,
-      income: 91
+      expenses: 3763,
+      income: 949
     },
     {
       year: 2002,
-      expenses: 197,
-      income: 183
+      expenses: 4152,
+      income: 1022
     },
     {
       year: 2003,
-      expenses: 201,
-      income: 98
+      expenses: 4428,
+      income: 1014
     },
     {
       year: 2004,
-      expenses: 199,
-      income: 121
+      expenses: 4459,
+      income: 1023
     },
     {
       year: 2005,
-      expenses: 186,
-      income: 148
+      expenses: 4676,
+      income: 618
     },
     {
       year: 2006,
-      expenses: 213,
-      income: 1583
+      expenses: 4869,
+      income: 775
     },
     {
       year: 2007,
-      expenses: 201,
-      income: 171
+      expenses: 4629,
+      income: 1032
     },
     {
       year: 2008,
-      expenses: 190.4,
-      income: 419
+      expenses: 4513,
+      income: 539
     },
     {
       year: 2009,
-      expenses: 235.1,
-      income: 261
+      expenses: 4210,
+      income: 475
     },
     {
       year: 2010,
-      expenses: 265.5,
-      income: 280
+      expenses: 4601,
+      income: 1001
     },
     {
       year: 2011,
-      expenses: 262.2,
-      income: 382.6
+      expenses: 4345,
+      income: 971.82
     },
     {
       year: 2012,
-      expenses: 260.7,
-      income: 284.7
+      expenses: 4091,
+      income: 1033.6
     },
     {
       year: 2013,
-      expenses: 324,
-      income: 302.3
+      expenses: 3393,
+      income: 945.6
     },
     {
       year: 2014,
-      expenses: 311.8,
-      income: 278.9
+      expenses: 3275,
+      income: 907
     },
     {
       year: 2015,
-      expenses: 286.6,
-      income: 472.5
-    },
-    {
-      year: 2016,
-      expenses: 324,
-      income: 428
+      expenses: 2852,
+      income: 916.1
     }
   ],
   valueAxes: [
@@ -3888,7 +3879,7 @@ AmCharts.makeChart("chartdivFA2", {
       autoGridCount: "true",
       axisAlpha: 1,
       gridAlpha: 0,
-      title: "тонн"
+      title: "тыс. тонн"
     }
   ],
   startDuration: 1,
@@ -3899,7 +3890,7 @@ AmCharts.makeChart("chartdivFA2", {
       size: 24,
       tabIndex: 0,
       text:
-        "Динамика добычи золота и прироста его запасов категорий А+В+С1 в результате геологоразведочных работ в 1991-2015 гг., тонн"
+        "Динамика добычи богатых нефелиновых руд компанией ОАО РУСАЛ АЧИНСКИЙ глиноземный комбинат и производства нефелинового концентрата компанией ОАО Апатит в 1991-2015 гг., тыс. тонн"
     }
   ],
   graphs: [
@@ -3909,7 +3900,7 @@ AmCharts.makeChart("chartdivFA2", {
         "<b>[[title]]</b> <br> <span style='font-size:14px'>[[category]]: <b>[[value]] </b> [[additional]]</span>",
       fillAlphas: 0.8,
       lineAlpha: 0.3,
-      title: "Объем приращенных запасов золота (ABC1) в тоннах",
+      title: "Производство нефелиновых концентратов ОАО Апатит",
       type: "column",
       fontSize: 10,
       labelText: "[[value]]",
@@ -3930,7 +3921,362 @@ AmCharts.makeChart("chartdivFA2", {
       bulletBorderThickness: 3,
       fillAlphas: 0,
       lineAlpha: 1,
-      title: "Объем добычи золота в тоннах",
+      title: "Добыча нефелиновых руд ОАО РУСАЛ Ачинский глиноземный комбинат",
+      valueField: "expenses",
+      dashLengthField: "dashLengthLine"
+    }
+  ],
+  categoryField: "year",
+  categoryAxis: {
+    gridPosition: "start",
+    axisAlpha: 1,
+    gridAlpha: 0,
+    tickLength: 1
+  },
+  export: {
+    enabled: true
+  }
+});
+
+AmCharts.makeChart("chartdivFA3", {
+  type: "serial",
+  categoryField: "category",
+  columnSpacing: 0,
+  thousandsSeparator: " ",
+  startDuration: 1,
+  fontSize: 16,
+  colors: ["#67b7dc", "#fdd400"],
+  theme: "light",
+  categoryAxis: {
+    gridPosition: "start"
+  },
+  trendLines: [],
+  graphs: [
+    {
+      balloonText:
+        "<b>[[title]]</b> в тоннах <br>[[category]]: <b>[[value]]</b>",
+      fillAlphas: 1,
+      id: "AmGraph-1",
+      title: "Запасы категорий A+B+C1",
+      type: "column",
+      fontSize: 10,
+      tabIndex: 5,
+      labelText: "[[value]]",
+      valueField: "abc1"
+    },
+    {
+      balloonText:
+        "<b>[[title]]</b> в тоннах <br>[[category]]: <b>[[value]]</b>",
+      fillAlphas: 1,
+      id: "AmGraph-2",
+      title: "Запасы категорий C2",
+      fontSize: 10,
+      tabIndex: 5,
+      labelText: "[[value]]",
+      type: "column",
+      valueField: "c2"
+    }
+  ],
+  guides: [],
+  valueAxes: [
+    {
+      id: "ValueAxis-1",
+      title: "млн. тонн"
+    }
+  ],
+  allLabels: [],
+  balloon: {},
+  legend: {
+    enabled: true,
+    useGraphSettings: true
+  },
+  titles: [
+    {
+      id: "Title-1",
+      size: 24,
+      text: "Динамика движения запасов бокситов в 1995–2015 гг., млн. тонн"
+    }
+  ],
+  dataProvider: [
+    {
+      category: "1991",
+      c2: "201.9",
+      abc1: "1269.8"
+    },
+    {
+      category: "1993",
+      c2: "201.8",
+      abc1: "1268"
+    },
+    {
+      category: "1995",
+      c2: "247.2",
+      abc1: "1267.7"
+    },
+    {
+      category: "1997",
+      c2: "246.2",
+      abc1: "1261.4"
+    },
+    {
+      category: "1999",
+      c2: "250.7",
+      abc1: "1253.6"
+    },
+    {
+      category: "2001",
+      c2: "286.3",
+      abc1: "1248.2"
+    },
+    {
+      category: "2002",
+      c2: "285.3",
+      abc1: "1224"
+    },
+    {
+      category: "2003",
+      c2: "286",
+      abc1: "1199.7"
+    },
+    {
+      category: "2004",
+      c2: "285.7",
+      abc1: "1194.3"
+    },
+    {
+      category: "2005",
+      c2: "285.5",
+      abc1: "1188"
+    },
+    {
+      category: "2006",
+      c2: "285.5",
+      abc1: "1188"
+    },
+    {
+      category: "2007",
+      c2: "285.1",
+      abc1: "1181.4"
+    },
+    {
+      category: "2008",
+      c2: "248.8",
+      abc1: "1175.1"
+    },
+    {
+      category: "2009",
+      c2: "283.4",
+      abc1: "1165.9"
+    },
+    {
+      category: "2010",
+      c2: "283.1",
+      abc1: "1160.4"
+    },
+    {
+      category: "2011",
+      c2: "282.9",
+      abc1: "1154.5"
+    },
+    {
+      category: "2012",
+      c2: "282.8",
+      abc1: "1148.4"
+    },
+    {
+      category: "2013",
+      c2: "282.8",
+      abc1: "1144.3"
+    },
+    {
+      category: "2014",
+      c2: "282.4",
+      abc1: "1131.3"
+    },
+    {
+      category: "2015",
+      c2: "282.4",
+      abc1: "1124.8"
+    }
+  ]
+});
+
+AmCharts.makeChart("chartdivFA4", {
+  type: "serial",
+  categoryField: "category",
+  theme: "light",
+  thousandsSeparator: " ",
+  startDuration: 1,
+  fontSize: 14,
+  colors: ["#67b7dc", "#fdd400"],
+  categoryAxis: {
+    gridPosition: "start"
+  },
+  trendLines: [],
+  balloon: {
+    horizontalPadding: 10,
+    verticalPadding: 8,
+    color: "#000"
+  },
+  legend: {
+    autoMargins: false,
+    equalWidths: true,
+    horizontalGap: 10,
+    markerSize: 10,
+    useGraphSettings: true,
+    valueWidth: 0
+  },
+  dataProvider: [
+    {
+      year: 1991,
+      expenses: 4416,
+      income: 1295
+    },
+    {
+      year: 1993,
+      expenses: 3903,
+      income: 3439
+    },
+    {
+      year: 1995,
+      expenses: 3412,
+      income: 502
+    },
+    {
+      year: 1997,
+      expenses: 3512,
+      income: 143
+    },
+    {
+      year: 1999,
+      expenses: 4046,
+      income: 445
+    },
+    {
+      year: 2001,
+      expenses: 4464,
+      income: 277
+    },
+    {
+      year: 2002,
+      expenses: 4331,
+      income: 239
+    },
+    {
+      year: 2003,
+      expenses: 5050,
+      income: 266
+    },
+    {
+      year: 2004,
+      expenses: 5363,
+      income: 950
+    },
+    {
+      year: 2005,
+      expenses: 5800,
+      income: 229
+    },
+    {
+      year: 2006,
+      expenses: 5989,
+      income: 210
+    },
+    {
+      year: 2007,
+      expenses: 5503,
+      income: 258
+    },
+    {
+      year: 2008,
+      expenses: 5324,
+      income: 322
+    },
+    {
+      year: 2009,
+      expenses: 5234,
+      income: 346
+    },
+    {
+      year: 2010,
+      expenses: 5412,
+      income: 233
+    },
+    {
+      year: 2011,
+      expenses: 5482,
+      income: 199
+    },
+    {
+      year: 2012,
+      expenses: 5137,
+      income: 117
+    },
+    {
+      year: 2013,
+      expenses: 5634,
+      income: 122
+    },
+    {
+      year: 2014,
+      expenses: 6056,
+      income: 363
+    },
+    {
+      year: 2015,
+      expenses: 5661,
+      income: 0
+    }
+  ],
+  valueAxes: [
+    {
+      stackType: "regular",
+      autoGridCount: "true",
+      axisAlpha: 1,
+      gridAlpha: 0,
+      title: "тыс. тонн"
+    }
+  ],
+  startDuration: 1,
+  titles: [
+    {
+      bold: true,
+      id: "Title-1",
+      size: 24,
+      tabIndex: 0,
+      text:
+        "Динамика добычи бокситов и прироста их запасов категорий А+В+С1 в результате геологоразведочных работ в 1991-2015 гг., тонн"
+    }
+  ],
+  graphs: [
+    {
+      alphaField: "alpha",
+      balloonText:
+        "<b>[[title]]</b> <br> <span style='font-size:14px'>[[category]]: <b>[[value]] </b> [[additional]]</span>",
+      fillAlphas: 0.8,
+      lineAlpha: 0.3,
+      title: "Прирост запасов категорий АBC1",
+      type: "column",
+      fontSize: 10,
+      labelText: "[[value]]",
+      valueField: "income",
+      dashLengthField: "dashLengthColumn"
+    },
+    {
+      id: "graph2",
+      balloonText:
+        "<b>[[title]]</b> <br> <span style='font-size:14px'>[[category]]: <b>[[value]] </b> [[additional]]</span>",
+      bullet: "round",
+      tabIndex: 5,
+      lineThickness: 3,
+      bulletSize: 7,
+      bulletBorderAlpha: 1,
+      bulletColor: "#FFFFFF",
+      useLineColorForBulletBorder: true,
+      bulletBorderThickness: 3,
+      fillAlphas: 0,
+      lineAlpha: 1,
+      title: "Добыча",
       valueField: "expenses",
       dashLengthField: "dashLengthLine"
     }
@@ -4948,5 +5294,27 @@ function modalOpen22() {
 function modalClose22() {
   if (window.screen.width > 768) {
     $(".modals22").hide();
+  }
+}
+
+function modalOpen23() {
+  if (window.screen.width > 768) {
+    $(".modals23").show();
+  }
+}
+function modalClose23() {
+  if (window.screen.width > 768) {
+    $(".modals23").hide();
+  }
+}
+
+function modalOpen24() {
+  if (window.screen.width > 768) {
+    $(".modals24").show();
+  }
+}
+function modalClose24() {
+  if (window.screen.width > 768) {
+    $(".modals24").hide();
   }
 }

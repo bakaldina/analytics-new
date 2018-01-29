@@ -370,6 +370,8 @@ h5 {
 .modals20,
 .modals21,
 .modals22,
+.modals23,
+.modals24,
 .modalsL1 {
   display: none;
   position: fixed;
@@ -401,6 +403,8 @@ h5 {
 .modals20__content,
 .modals21__content,
 .modals22__content,
+.modals23__content,
+.modals24__content,
 .modalsL1__content {
   transform: translate(-50%, -50%);
   z-index: 2;
@@ -429,6 +433,8 @@ h5 {
 .modals20__overlay,
 .modals21__overlay,
 .modals22__overlay,
+.modals23__overlay,
+.modals24__overlay,
 .modalsL1__overlay {
   z-index: 1;
   width: 100%;
