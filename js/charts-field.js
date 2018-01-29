@@ -168,7 +168,7 @@ AmCharts.makeChart("chartdivF2", {
   theme: "light",
   thousandsSeparator: " ",
   startDuration: 1,
-  fontSize: 12,
+  fontSize: 14,
   colors: ["#67b7dc", "#fdd400"],
   categoryAxis: {
     gridPosition: "start"
