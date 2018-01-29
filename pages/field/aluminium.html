@@ -174,20 +174,24 @@
             </ul>
 
         </nav>
-        <section class="content" style="margin: 30px; font-size: 30px;">
-            В разработке Месторождения
-            <!-- <div class="row">
+        <section class="content">
+            <div class="row">
                 <h2>Популярная статистика по меди, всего по России</h2>
                 <div class="row__container1">
                     <div class="row__container1_item1">
                         <h3>Количество месторождений</h3>
-                        <p class="main-value">172</p>
-                        <p class="bottom-value"></p>
+                        <h5>Нефелиновых руд</h5>
+                        <p class="main-value" style="margin-top: 0;">17</p>
+                        <h5>Бокситов</h5>
+                        <p class="main-value" style="margin-top: 0;">57</p>
                     </div>
                     <div class="row__container1_item1">
                         <h3>Запасы</h3>
-                        <p class="main-value">97436,2</p>
-                        <p class="bottom-value">тонн</p>
+                        <h5>Нефелиновых руд</h5>
+                        <p class="main-value" style="margin-top: 0;">4 940 580</p>
+                        <h5>Бокситов</h5>
+                        <p class="main-value" style="margin-top: 0;">1 400 192</p>
+                        <p class="bottom-value">тыс. тонн</p>
                         <p class="bottom-value">A+B+C
                             <sub>1</sub>+C
                             <sub>2</sub>
@@ -195,12 +199,15 @@
                     </div>
                     <div class="row__container1_item1">
                         <h3>Добыча за 2016г.</h3>
-                        <p class="main-value">848,1</p>
-                        <p class="bottom-value">тонн</p>
+                        <h5>Нефелиновых руд</h5>
+                        <p class="main-value" style="margin-top: 0;">31 899</p>
+                        <h5>Бокситов</h5>
+                        <p class="main-value" style="margin-top: 0;">6 095</p>
+                        <p class="bottom-value">тыс. тонн</p>
                     </div>
                     <div class="row__container1_item1">
-                        <h3>Цена (курс ЦБ РФ)</h3>
-                        <iframe style="width:260px;border:0;overflow:hidden;background-color:transparent;height:147px" scrolling="no" src="https://fortrader.org/informers/getInformer?st=25&cat=10&title=undefined&mult=1&showGetBtn=0&w=260&hideDiff=1&colors=false&items=25466&columns="></iframe>
+                        <h3>Цена</h3>
+                        <p style="font-size: 20px; margin-top: 100px;" class="grey-block">Уточняется</p>
                     </div>
                 </div>
 
@@ -208,27 +215,33 @@
 
                 <div class="row__container2">
                     <div class="row__container2_item2">
-                        <h3>Динамика движения запасов в 1993–2015 гг., тонн</h3>
-                        <img src="../../image/fc_chart-1.png" onclick="modalOpen15()" alt="Динамика движения запасов меди">
+                        <h3>Динамика движения запасов в 1995–2015 гг., млн. тонн</h3>
+                        <img src="../../image/fal_chart-1.png" onclick="modalOpen18()" alt="Динамика движения запасов меди">
                     </div>
                     <div class="row__container2_item2 grey-block">
                         <h3>Динамика добычи и прироста запасов в 1991-2015 гг., тонн</h3>
-                        <img src="../../image/fc_chart-1.png" onclick="modalOpen1()" alt="Динамика добычи золота и прироста его запасов категорий А+В+С">
+                        <img src="../../image/fal_chart-1.png" alt="Динамика добычи золота и прироста его запасов категорий А+В+С">
                     </div>
                     <div class="row__container2_item2 grey-block">
                         <h3>Динамика распределения запасов и ресурсов в 2004-2015 гг., тонн</h3>
-                        <img src="../../image/fc_chart-1.png" onclick="modalOpen3()" alt="Динамика распределения запасов и ресурсов">
+                        <img src="../../image/fal_chart-1.png" alt="Динамика распределения запасов и ресурсов">
                     </div>
                     <div class="row__container2_item2 grey-block">
                         <h3>Динамика движения запасов в 1993–2015 гг., тонн</h3>
-                        <img src="../../image/fc_chart-1.png" onclick="modalOpen2()" alt="Динамика движения запасов золота в 2006–2015 гг">
+                        <img src="../../image/fal_chart-1.png" alt="Динамика движения запасов золота в 2006–2015 гг">
                     </div>
-                </div> -->
+                </div>
 
             </div>
         </section>
     </main>
-
+    <div class="modals18">
+        <div class="modals18__overlay" onclick="modalClose18()">
+        </div>
+        <div class="modals18__content">
+            <div id="chartdivF18" style="width: 100%; height: 700px; background-color: #FFFFFF;"></div>
+        </div>
+    </div>
 
     <footer class="footer">
         <div class="footer__item">
