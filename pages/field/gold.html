@@ -216,19 +216,19 @@
                 <div class="row__container2">
                     <div class="row__container2_item2">
                         <h3>Динамика запасов в 1991–2015 гг., %</h3>
-                        <img src="../../image/fau_chart-1.png" onclick="modalOpen()" alt="Динамика запасов золота категорий А+В+С.">
+                        <img src="../../image/fau_chart-1.png" onclick="modalOpen('', )" alt="Динамика запасов золота категорий А+В+С.">
                     </div>
                     <div class="row__container2_item2">
                         <h3>Динамика добычи и прироста запасов в 1991-2015 гг., тонн</h3>
-                        <img src="../../image/fau_chart-2.png" onclick="modalOpen1()" alt="Динамика добычи золота и прироста его запасов категорий А+В+С">
+                        <img src="../../image/fau_chart-2.png" onclick="modalOpen(1)" alt="Динамика добычи золота и прироста его запасов категорий А+В+С">
                     </div>
                     <div class="row__container2_item2">
                         <h3>Динамика распределения запасов и ресурсов в 2004-2015 гг., тонн</h3>
-                        <img src="../../image/fau_chart-3.png" onclick="modalOpen2()" alt="Динамика распределения запасов и ресурсов">
+                        <img src="../../image/fau_chart-3.png" onclick="modalOpen(2)" alt="Динамика распределения запасов и ресурсов">
                     </div>
                     <div class="row__container2_item2">
                         <h3>Динамика движения запасов в 1993–2015 гг., тонн</h3>
-                        <img src="../../image/fau_chart-4.png" onclick="modalOpen3()" alt="Динамика движения запасов золота в 2006–2015 гг">
+                        <img src="../../image/fau_chart-4.png" onclick="modalOpen(3)" alt="Динамика движения запасов золота в 2006–2015 гг">
                     </div>
                 </div>
 
@@ -237,15 +237,15 @@
                 <div class="row__container2">
                     <div class="row__container2_item2">
                         <h3>Распределение добычи по субъектам РФ в 2016г., тонн</h3>
-                        <img src="../../image/fau_chart-5.png" onclick="modalOpen4()" alt="Распределение добычи по субъектам Р.">
+                        <img src="../../image/fau_chart-5.png" onclick="modalOpen(4)" alt="Распределение добычи по субъектам Р.">
                     </div>
                     <div class="row__container2_item2">
                         <h3>Динамика добычи и экспорта в 2002-2015 гг., тонн</h3>
-                        <img src="../../image/fau_chart-6.png" onclick="modalOpen5()" alt="Динамика добычи и экспорта в 2002-2015 гг">
+                        <img src="../../image/fau_chart-6.png" onclick="modalOpen(5)" alt="Динамика добычи и экспорта в 2002-2015 гг">
                     </div>
                     <div class="row__container2_item2">
                         <h3>Сведения о распределении  запасов золота по основным типам месторождений в 2016г, кг</h3>
-                        <img src="../../image/fau_chart-7.png" onclick="modalOpen6()" alt="Распределение добычи по субъектам РФ">
+                        <img src="../../image/fau_chart-7.png" onclick="modalOpen(6)" alt="Распределение добычи по субъектам РФ">
                     </div>
                     <div class="row__container2_item2">
                         <h3>Динамика движения запасов в 1993–2015 гг., тонн</h3>
@@ -258,7 +258,7 @@
                 <div class="row__container2">
                     <div class="row__container2_item2">
                         <h3>Распределение добычи по основным типам рудных месторождений в 2016 году, тонн</h3>
-                        <img src="../../image/fau_chart-8.png" onclick="modalOpen7()" alt="Распределение добычи по основным типам рудных месторождений">
+                        <img src="../../image/fau_chart-8.png" onclick="modalOpen(7)" alt="Распределение добычи по основным типам рудных месторождений">
                     </div>
                     <div class="row__container2_item2">
                         <h3>Динамика добычи и экспорта в 2002-2015 гг., тонн</h3>
@@ -279,59 +279,62 @@
         </section>
     </main>
 
-    <div class="modals">
-        <div class="modals__overlay" onclick="modalClose()">
+    <div class="modals" id="modals">
+        <div class="modals__overlay" onclick="modalClose('')">
         </div>
         <div class="modals__content">
             <div id="chartdivFAu1" style="width: 100%; height: 700px; background-color: #FFFFFF;"></div>
         </div>
     </div>
-    <div class="modals1">
-        <div class="modals1__overlay" onclick="modalClose1()">
+
+
+
+    <div class="modals" id="modals1">
+        <div class="modals__overlay" onclick="modalClose(1)">
         </div>
-        <div class="modals1__content">
+        <div class="modals__content">
             <div id="chartdivFAu2" style="width: 100%; height: 700px; background-color: #FFFFFF;"></div>
         </div>
     </div>
-    <div class="modals2">
-        <div class="modals2__overlay" onclick="modalClose2()">
+    <div class="modals" id="modals2">
+        <div class="modals__overlay" onclick="modalClose(2)">
         </div>
-        <div class="modals2__content">
+        <div class="modals__content">
             <div id="chartdivFAu3" style="width: 100%; height: 700px; background-color: #FFFFFF;"></div>
         </div>
     </div>
-    <div class="modals3">
-        <div class="modals3__overlay" onclick="modalClose3()">
+    <div class="modals" id="modals3">
+        <div class="modals__overlay" onclick="modalClose(3)">
         </div>
-        <div class="modals3__content">
+        <div class="modals__content">
             <div id="chartdivFAu4" style="width: 100%; height: 700px; background-color: #FFFFFF;"></div>
         </div>
     </div>
-    <div class="modals4">
-        <div class="modals4__overlay" onclick="modalClose4()">
+    <div class="modals" id="modals4">
+        <div class="modals__overlay" onclick="modalClose(4)">
         </div>
-        <div class="modals4__content">
+        <div class="modals__content">
             <div id="FAumap" style="width: 100%; height: 850px; background-color: #FFFFFF;"></div>
         </div>
     </div>
-    <div class="modals5">
-        <div class="modals5__overlay" onclick="modalClose5()">
+    <div class="modals" id="modals5">
+        <div class="modals__overlay" onclick="modalClose(5)">
         </div>
-        <div class="modals5__content">
+        <div class="modals__content">
             <div id="chartdivFAu5" style="width: 100%; height: 700px; background-color: #FFFFFF;"></div>
         </div>
     </div>
-    <div class="modals6">
-        <div class="modals6__overlay" onclick="modalClose6()">
+    <div class="modals" id="modals6">
+        <div class="modals__overlay" onclick="modalClose(6)">
         </div>
-        <div class="modals6__content">
+        <div class="modals__content">
             <div id="chartdivFAu6" style="width: 100%; height: 700px; background-color: #FFFFFF;"></div>
         </div>
     </div>
-    <div class="modals7">
-        <div class="modals7__overlay" onclick="modalClose7()">
+    <div class="modals" id="modals7">
+        <div class="modals__overlay" onclick="modalClose(7)">
         </div>
-        <div class="modals7__content">
+        <div class="modals__content">
             <div id="chartdivFAu7" style="width: 100%; height: 700px; background-color: #FFFFFF;"></div>
         </div>
     </div>

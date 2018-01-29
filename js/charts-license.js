@@ -1,4 +1,4 @@
-AmCharts.makeChart("chartdivL1", {
+AmCharts.makeChart("chartdivLG1", {
   type: "serial",
   categoryField: "category",
   startDuration: 1,
@@ -289,13 +289,14 @@ AmCharts.makeChart("chartdivL1", {
   ]
 });
 
-function modalOpenL1() {
+function modalOpen(number) {
   if (window.screen.width > 768) {
-    $(".modalsL1").show();
+    $("#modals" + number).show();
   }
 }
-function modalCloseL1() {
+
+function modalClose(number) {
   if (window.screen.width > 768) {
-    $(".modalsL1").hide();
+    $("#modals" + number).hide();
   }
 }
