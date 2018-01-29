@@ -366,6 +366,10 @@ h5 {
 .modals16,
 .modals17,
 .modals18,
+.modals19,
+.modals20,
+.modals21,
+.modals22,
 .modalsL1 {
   display: none;
   position: fixed;
@@ -393,6 +397,10 @@ h5 {
 .modals16__content,
 .modals17__content,
 .modals18__content,
+.modals19__content,
+.modals20__content,
+.modals21__content,
+.modals22__content,
 .modalsL1__content {
   transform: translate(-50%, -50%);
   z-index: 2;
@@ -417,6 +425,10 @@ h5 {
 .modals16__overlay,
 .modals17__overlay,
 .modals18__overlay,
+.modals19__overlay,
+.modals20__overlay,
+.modals21__overlay,
+.modals22__overlay,
 .modalsL1__overlay {
   z-index: 1;
   width: 100%;
