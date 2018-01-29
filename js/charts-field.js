@@ -333,6 +333,7 @@ AmCharts.makeChart("chartdivF2", {
       lineAlpha: 0.3,
       title: "Объем приращенных запасов золота (ABC1) в тоннах",
       type: "column",
+      fontSize: 10,
       labelText: "[[value]]",
       valueField: "income",
       dashLengthField: "dashLengthColumn"
