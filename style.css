@@ -384,6 +384,7 @@ h5 {
 .footer {
   height: 270px;
   background-color: #263948;
+  z-index: 5;
 }
 .footer__item {
   max-width: 1000px;
