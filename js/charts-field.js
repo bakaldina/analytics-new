@@ -4656,7 +4656,6 @@ AmCharts.makeChart("chartdivFG5", {
   categoryField: "category",
   startEffect: "easeInSine",
   fontSize: 14,
-  theme: "light",
   thousandsSeparator: " ",
   categoryAxis: {
     gridPosition: "start",
@@ -4674,6 +4673,7 @@ AmCharts.makeChart("chartdivFG5", {
       lineAlpha: 1,
       lineThickness: 3,
       title: "Твердые полезные ископаемые",
+      lineColor: "#9ACD32",
       valueField: "column-1"
     },
     {
@@ -4683,6 +4683,7 @@ AmCharts.makeChart("chartdivFG5", {
       bulletSize: 10,
       id: "AmGraph-2",
       lineThickness: 3,
+      lineColor: "#8B4513",
       title: "Углеводородное сырье ",
       valueField: "column-2"
     },
@@ -4696,6 +4697,7 @@ AmCharts.makeChart("chartdivFG5", {
       legendAlpha: 0,
       lineThickness: 3,
       title: "Подземные воды ",
+      lineColor: "#00BFFF",
       topRadius: 0,
       valueField: "column-3"
     }
@@ -4915,6 +4917,8 @@ AmCharts.makeChart("chartdivFG6", {
       id: "AmGraph-1",
       lineAlpha: 1,
       lineThickness: 3,
+      lineColor: "#9ACD32",
+
       title: "Твердые полезные ископаемые",
       valueField: "column-1"
     },
@@ -4926,6 +4930,7 @@ AmCharts.makeChart("chartdivFG6", {
       id: "AmGraph-2",
       lineThickness: 3,
       title: "Углеводородное сырье ",
+      lineColor: "#8B4513",
       valueField: "column-2"
     },
     {
@@ -4937,6 +4942,8 @@ AmCharts.makeChart("chartdivFG6", {
       id: "AmGraph-3",
       legendAlpha: 0,
       lineThickness: 3,
+
+      lineColor: "#00BFFF",
       title: "Подземные воды ",
       topRadius: 0,
       valueField: "column-3"
