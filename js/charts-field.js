@@ -2828,7 +2828,7 @@ AmCharts.makeChart("chartdivFC2", {
       autoGridCount: "true",
       axisAlpha: 1,
       gridAlpha: 0,
-      title: "тонн"
+      title: "тыс. тонн"
     }
   ],
   startDuration: 1,
@@ -2903,7 +2903,7 @@ AmCharts.makeChart("chartdivFO1", {
   graphs: [
     {
       balloonText:
-        "<b>[[title]]</b> в тоннах <br>[[category]]: <b>[[value]]</b>",
+        "<b>[[title]]</b> в млн. тонн <br>[[category]]: <b>[[value]]</b>",
       fillAlphas: 1,
       id: "AmGraph-1",
       title: "Запасы категорий A+B+C1",
@@ -2915,7 +2915,7 @@ AmCharts.makeChart("chartdivFO1", {
     },
     {
       balloonText:
-        "<b>[[title]]</b> в тоннах <br>[[category]]: <b>[[value]]</b>",
+        "<b>[[title]]</b> в млн. тонн <br>[[category]]: <b>[[value]]</b>",
       fillAlphas: 1,
       id: "AmGraph-2",
       title: "Запасы категорий C2",
@@ -2930,7 +2930,7 @@ AmCharts.makeChart("chartdivFO1", {
   valueAxes: [
     {
       id: "ValueAxis-1",
-      title: "млрд. тонн"
+      title: "млн. тонн"
     }
   ],
   allLabels: [],
@@ -2943,50 +2943,10 @@ AmCharts.makeChart("chartdivFO1", {
     {
       id: "Title-1",
       size: 24,
-      text: "Динамика движения запасов в 2005–2015 гг., тонн"
+      text: "Динамика движения запасов в 2005–2015 гг., млн. тонн"
     }
   ],
   dataProvider: [
-    // {
-    //     category: "1993",
-    //     c2: "19.7",
-    //     abc1: "68.6"
-    // },
-    // {
-    //     category: "1995",
-    //     c2: "19.7",
-    //     abc1: "67.9"
-    // },
-    // {
-    //     category: "1997",
-    //     c2: "19.5",
-    //     abc1: "66.9"
-    // },
-    // {
-    //     category: "1999",
-    //     c2: "19.4",
-    //     abc1: "65.8"
-    // },
-    // {
-    //     category: "2001",
-    //     c2: "19.3",
-    //     abc1: "64.6"
-    // },
-    // {
-    //     category: "2002",
-    //     c2: "19.5",
-    //     abc1: "64.0"
-    // },
-    // {
-    //     category: "2003",
-    //     c2: "19.6",
-    //     abc1: "63.5"
-    // },
-    // {
-    //     category: "2004",
-    //     c2: "19.6",
-    //     abc1: "63.1"
-    // },
     {
       category: "2005",
       c2: "8.5",
@@ -3189,7 +3149,7 @@ AmCharts.makeChart("chartdivFO2", {
       size: 24,
       tabIndex: 0,
       text:
-        "Динамика добычи нефти и прироста его запасов категорий А+В+С1 в результате геологоразведочных работ в 1991-2015 гг., тонн"
+        "Динамика добычи нефти и прироста его запасов категорий А+В+С1 в результате геологоразведочных работ в 1991-2015 гг., млн. тонн"
     }
   ],
   graphs: [
@@ -3199,7 +3159,7 @@ AmCharts.makeChart("chartdivFO2", {
         "<b>[[title]]</b> <br> <span style='font-size:14px'>[[category]]: <b>[[value]] </b> [[additional]]</span>",
       fillAlphas: 0.8,
       lineAlpha: 0.3,
-      title: "Объем приращенных запасов нефти (ABC1) в тоннах",
+      title: "Объем приращенных запасов нефти (ABC1) в млн. тонн",
       type: "column",
       fontSize: 10,
       labelText: "[[value]]",
@@ -3220,7 +3180,7 @@ AmCharts.makeChart("chartdivFO2", {
       bulletBorderThickness: 3,
       fillAlphas: 0,
       lineAlpha: 1,
-      title: "Объем добычи нефти в тоннах",
+      title: "Объем добычи нефти в млн. тонн",
       valueField: "expenses",
       dashLengthField: "dashLengthLine"
     }
@@ -4245,7 +4205,7 @@ AmCharts.makeChart("chartdivFA4", {
       size: 24,
       tabIndex: 0,
       text:
-        "Динамика добычи бокситов и прироста их запасов категорий А+В+С1 в результате геологоразведочных работ в 1991-2015 гг., тонн"
+        "Динамика добычи бокситов и прироста их запасов категорий А+В+С1 в результате геологоразведочных работ в 1991-2015 гг., тыс. тонн"
     }
   ],
   graphs: [
