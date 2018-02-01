@@ -820,7 +820,7 @@ h5 {
   .menu ul {
     display: flex;
     justify-content: space-evenly;
-    padding-left: 45px;
+    /* padding-left: 45px; */
   }
   .menu .button {
     margin-top: 18px;
